@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Fresh Feast</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/icon.png" alt="Fresh Feast Logo">
+      <span>Fresh Feast</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html"><i class="material-icons-outlined">home</i>Home</a>
+      <a href="foods.html"><i class="material-icons-outlined">restaurant</i>Foods</a> <!-- Assuming this was Food Details -->
+      <a href="food-detail.html"><i class="material-icons-outlined">fastfood</i>Food Details</a>
+      <a href="cart.html"><i class="material-icons-outlined">shopping_cart</i>Cart</a>
+      <a href="user-login.html"><i class="material-icons-outlined">login</i>User Login</a>
+      <a href="#"><i class="material-icons-outlined">admin_panel_settings</i>Admin Login</a>
+      <a href="about.html"><i class="material-icons-outlined">info</i>About</a>
+      <a href="contact.html" class="active"><i class="material-icons-outlined">call</i>Contact</a> <!-- Changed icon to 'call' -->
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="contact-page-title-container">
+        <h2 class="contact-page-title-text">Contact Us</h2>
+    </div>
+
+    <div class="contact-form-wrapper">
+        <form class="contact-page-form" autocomplete="off">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Contact No" required>
+            <textarea placeholder="Your Message" required rows="5"></textarea>
+            <div class="captcha-row">
+                <div class="captcha-display">SWBL14</div>
+                <button type="button" class="reload-btn">Reload CAPTCHA</button>
+            </div>
+            <input type="text" placeholder="Enter CAPTCHA" required>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+
+    <div class="contact-details-wrapper">
+        <p>You may contact us using the information below:</p>
+        <h4>Registered Address:</h4>
+        <p>Cherry Road, Vincent Bus Stop , Salem 636007</p>
+        <h4>Telephone No:</h4>
+        <p>+91 9123456789</p>
+        <h4>EMail:</h4>
+        <p>support@freshfeast.com</p>
+    </div>
+  </main>
+
+  <!-- Footer (same as home) -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Main</a></li>
+          <li><a href="#">Pizza</a></li>
+          <li><a href="#">Desserts</a></li>
+          <li><a href="#">Salads</a></li>
+          <li><a href="#">Ice Cream</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Cuisines</h4>
+        <ul>
+          <li><a href="#">Indian</a></li>
+          <li><a href="#">Chinese</a></li>
+          <li><a href="#">Italian</a></li>
+          <li><a href="#">American</a></li>
+          <li><a href="#">Thai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Available in:</h4>
+        <ul>
+          <li>Bangalore</li>
+          <li>Gurgaon</li>
+          <li>Hyderabad</li>
+          <li>Delhi</li>
+          <li>Mumbai</li>
+          <li>Pune</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ride with us</h4>
+        <ul>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>2025 © freshfeast.com</span>
+    </div>
+  </footer>
+</body>
+</html>
