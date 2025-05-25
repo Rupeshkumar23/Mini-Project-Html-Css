@@ -375,7 +375,7 @@ ul {
 }
 .cart-page-title-text {
   font-size: 2rem;
-  color: #9082b3;
+  color: #9082b3;   
   font-weight: normal;
   letter-spacing: 1px;
   white-space: nowrap;
@@ -401,7 +401,6 @@ ul {
   margin-bottom: 1rem;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   overflow: hidden;
 }
 .cart-table th,
@@ -413,18 +412,13 @@ ul {
   color: #333;
 }
 .cart-table th {
-  background-color: #6a5acd;
+  background-color: #574B90;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.cart-table th:first-child {
-  border-top-left-radius: 4px;
-}
-.cart-table th:last-child {
-  border-top-right-radius: 4px;
-}
+
 .cart-table td:nth-child(1) {
   width: 80px;
   text-align: center;
@@ -456,7 +450,7 @@ ul {
   font-size: 0.95rem;
 }
 .cart-table input[type="number"]:focus {
-  border-color: #6c5ebf;
+  border-color: #574B90;
   outline: none;
 }
 .remove-btn {
@@ -473,70 +467,86 @@ ul {
 .remove-btn:hover {
   background: #b21030;
 }
+
 .cart-summary {
-  flex: 1 1 30%;
+  flex: 1 1 20%;
   min-width: 280px;
   background: #fff;
-  border-radius: 6px;
-  padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   font-size: 1rem;
   align-self: flex-start;
   color: #444;
+  margin-left: -23px;
+  overflow: hidden; 
 }
-.cart-summary h3 {
-  font-size: 1.3rem;
-  color: #6a5acd;
-  margin-bottom: 1.2rem;
+
+.cart-summary h3 { 
+  font-size: 1.2rem;
+  background-color: #574B90; 
+  color: #fff; 
   text-align: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.8rem;
+  border-bottom: none; 
+  padding: .7rem; 
 }
+
+.cart-summary-content { 
+  padding: 1rem; 
+}
+
 .cart-summary p {
   margin-bottom: 0.9rem;
   display: flex;
   justify-content: space-between;
   font-size: 0.95rem;
 }
+
 .cart-summary p span:first-child {
   color: #555;
 }
+
 .cart-summary p span:last-child {
   font-weight: 500;
   color: #333;
 }
+
 .cart-summary hr {
   margin: 1rem 0;
   border: 0;
-  border-top: 1px dashed #ccc;
+  border-top: 1px solid #eaeaea; 
 }
+
 .cart-summary .total-row {
   font-weight: bold;
   font-size: 1.1rem;
   color: #333;
   margin-top: 0.5rem;
 }
+
 .cart-summary .total-row .total-amount {
-  color: #6a5acd;
+  color: #333; 
+  font-weight: bold; 
 }
+
 .checkout-btn {
-  background: #6a5acd;
+  background: #574B90; 
   color: #fff;
   border: none;
-  padding: 0.9rem 1.5rem;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 500;
-  margin-top: 1.5rem;
   width: 100%;
-  font-size: 1.05rem;
+  font-size: .8rem;
+  margin-top: .8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: background-color 0.2s;
 }
+
 .checkout-btn:hover {
-  background: #584c9a;
+  background: #453a79; 
 }
+
+
 
 /* Login Page Main Content Area */
 .login-page-main {
@@ -1414,10 +1424,11 @@ ul {
  
   .cart-items-section,
   .cart-summary {
-    flex-basis: auto;
+    flex-basis: 100%; 
   }
   .cart-summary {
     margin-top: 1.5rem;
+      margin-left: 0px;
   }
   .footer-cols {
     flex-direction: column;
@@ -1439,29 +1450,23 @@ ul {
   .contact-page-title-container::after {
     margin: 0 10px;
   }
-  .contact-page-title-text {
+  .contact-page-title-text,
+  .about-page-title-text,
+  .cart-page-title-text,
+  .login-page-title-text {
     font-size: 1.8rem;
   }
   .about-page-title-container {
     max-width: 90%;
   }
-  .about-page-title-text {
-    font-size: 1.8rem;
-  }
   .about-page-content {
     padding: 0 1rem;
   }
-  .cart-page-title-container {
+  .cart-page-title-container { 
     max-width: 90%;
   }
-  .cart-page-title-text {
-    font-size: 1.8rem;
-  }
-  .login-page-title-container {
+  .login-page-title-container { 
     max-width: 90%;
-  }
-  .login-page-title-text {
-    font-size: 1.8rem;
   }
   .login-form-wrapper {
     padding: 1rem;
@@ -1527,11 +1532,16 @@ ul {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
   }
-  .cart-summary {
-    padding: 1rem;
+  .cart-summary { 
+     padding: 0; 
+       margin-left: 0px;
   }
-  .cart-summary h3 {
+  .cart-summary-content { 
+      padding: 1rem;
+  }
+  .cart-summary h3 { 
     font-size: 1.1rem;
+    padding: 0.8rem;
   }
   .cart-summary p {
     font-size: 0.9rem;
@@ -1577,10 +1587,10 @@ ul {
     width: 100%;
     justify-content: center;
   }
-  .contact-page-title-text {
-    font-size: 1.6rem;
-  }
-  .about-page-title-text {
+  .contact-page-title-text,
+  .about-page-title-text,
+  .cart-page-title-text, 
+  .login-page-title-text {
     font-size: 1.6rem;
   }
   .about-page-content {
@@ -1588,12 +1598,6 @@ ul {
   }
   .about-page-content h3 {
     font-size: 1.1rem;
-  }
-  .cart-page-title-text {
-    font-size: 1.6rem;
-  }
-  .login-page-title-text {
-    font-size: 1.6rem;
   }
   .login-form-wrapper {
     max-width: 90%;
