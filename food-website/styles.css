@@ -1247,7 +1247,7 @@ ul {
   color: white;
 }
 .carousel-card-overlay-tags .tag-rating-value {
-  background-color: #4a2f6b;
+  background-color: #574B90;
 }
 .carousel-card-overlay-tags .tag-rating-value .star-icon {
   font-size: 14px;
@@ -1302,7 +1302,7 @@ ul {
   font-weight: 700;
 }
 .add-to-cart-btn-small {
-  background-color: #563d7c;
+  background-color: #574B90;
   color: white;
   border: none;
   padding: 6px 14px;
@@ -1363,6 +1363,15 @@ ul {
 @media (max-width: 1200px) {
   .food-card-detailed {
     width: calc(25% - 25px);
+  }
+   .banner {
+    max-height: 350px;
+  }
+  .banner-img {
+    transform: translateY(0);
+  }
+  .banner-text h1 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 992px) {
