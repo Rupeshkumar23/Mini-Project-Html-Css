@@ -117,6 +117,7 @@ ul {
   max-width: 1200px;
   padding: 2rem 2rem 2rem 2rem;
   margin: 0 auto;
+  min-height: 100vh;
 }
 .section-title {
   text-align: center;
@@ -1074,7 +1075,11 @@ ul {
   max-width: 100%;
   margin: 0 auto;
 }
-
+.circle{
+  background-color: #00000080;
+  color: #ffffff;
+  border-radius: 50%;
+}
 .horizontal-scroll-carousel {
   display: flex;
   overflow-x: auto;
@@ -1082,7 +1087,7 @@ ul {
   padding: 10px 2px;
   scrollbar-width: thin;
   scrollbar-color: #ccc #f0f0f0;
-  scroll-snap-type: x mandatory; /* Enable scroll snapping */
+  scroll-snap-type: x mandatory; 
 }
 .horizontal-scroll-carousel::-webkit-scrollbar {
   height: 8px;
@@ -1106,7 +1111,6 @@ ul {
   transform: translateY(-50%);
   width: 44px; 
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1114,17 +1118,17 @@ ul {
   cursor: default;
   z-index: 5;
   color: #444; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);  */
   transition: background-color 0.2s;
 }
 .carousel-nav-arrow:hover {
-  background-color: rgba(240, 240, 240, 0.9);
+ cursor: pointer;
 }
 .carousel-nav-arrow.prev {
-  left: -5px;
+  left: 40px;
 }
 .carousel-nav-arrow.next {
-  right: -5px;
+  right: 40px;
 } 
 .carousel-nav-arrow .material-icons {
   font-size: 32px;
@@ -1504,6 +1508,9 @@ ul {
   }
   .banner-text h1 {
     font-size: 2rem;
+  }
+  .section-title_1 {
+    font-size: 1rem;
   }
   .section-title {
     font-size: 1.8rem;
