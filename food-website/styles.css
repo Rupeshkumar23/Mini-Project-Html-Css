@@ -112,7 +112,7 @@ ul {
    font-weight: normal;
 }
 
-/* Main Content & General Section Titles */
+/* Main Content  */
 .main-content {
   max-width: 1200px;
   padding: 2rem 2rem 2rem 2rem;
@@ -153,7 +153,7 @@ ul {
   padding-bottom: 0.5rem;
     }
 
-/* Contact Page Specific Title */
+/* Contact Page  */
 .contact-page-title-container {
   display: flex;
   align-items: center;
@@ -178,7 +178,7 @@ ul {
   text-align: center;
 }
 
-/* Contact Form Wrapper & Form Styling */
+/* Contact Form Styling */
 .contact-form-wrapper {
   max-width: 550px;
   margin: 0 auto 2.5rem auto;
@@ -268,7 +268,7 @@ ul {
   background: #5c4d91;
 }
 
-/* Contact Details (Below Form) Styling */
+/* Contact Details  Styling */
 .contact-details-wrapper {
   max-width: 550px;
   margin: 0 auto 2rem auto;
@@ -293,7 +293,7 @@ ul {
   font-size: 1rem;
 }
 
-/* About Page Specific Title */
+/* About Page */
 .about-page-title-container {
   display: flex;
   align-items: center;
@@ -318,7 +318,7 @@ ul {
   text-align: center;
 }
 
-/* About Page Content Wrapper and Styles */
+/* About Page Content  Styles */
 .about-page-content {
   max-width: 860px;
   margin: 0 auto 2rem auto;
@@ -357,7 +357,7 @@ ul {
   color: #000;
 }
 
-/* Cart Page Specific Title */
+/* Cart Page  */
 .cart-page-title-container {
   display: flex;
   align-items: center;
@@ -617,7 +617,6 @@ ul {
   background: #584c9a;
 }
 
-/* Create Account Link */
 .login-form-wrapper .create-account-link {
   text-align: center;
   margin-top: 1.8rem;
@@ -634,7 +633,7 @@ ul {
   color: #584c9a;
 }
 
-/* Food Grid & Simple Food Card (retained for other pages) */
+
 .food-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1095,32 +1094,31 @@ ul {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px; /* Increased size */
-  height: 44px; /* Increased size */
-  background-color: rgba(255, 255, 255, 0.8); /* Faint white background */
+  width: 44px; 
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: default;
   z-index: 5;
-  color: #444; /* Darker grey for icon */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  color: #444; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
   transition: background-color 0.2s;
 }
 .carousel-nav-arrow:hover {
-  /* Optional: slight visual feedback */
   background-color: rgba(240, 240, 240, 0.9);
 }
 .carousel-nav-arrow.prev {
   left: -5px;
-} /* Adjust to be slightly outside */
+}
 .carousel-nav-arrow.next {
   right: -5px;
-} /* Adjust to be slightly outside */
+} 
 .carousel-nav-arrow .material-icons {
   font-size: 32px;
-} /* Larger icon */
+} 
 
 /* Carousel Food Card Styling */
 .carousel-food-card {
@@ -1256,9 +1254,6 @@ ul {
   margin-bottom: 6px;
   line-height: 1.3;
   min-height: calc(1.3em * 2);
-  display: -webkit-box;
-  /* -webkit-line-clamp: 2; */
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1375,7 +1370,7 @@ ul {
   }
   .carousel-outer-wrapper {
     padding: 0 20px;
-  } /* Less padding for arrows */
+  } 
   .carousel-nav-arrow {
     width: 38px;
     height: 38px;
@@ -1416,7 +1411,7 @@ ul {
   .food-card-detailed {
     width: calc(50% - 20px);
   }
-  /* .align-items-stretch; */
+ 
   .cart-items-section,
   .cart-summary {
     flex-basis: auto;
@@ -1476,7 +1471,7 @@ ul {
   }
   .carousel-nav-arrow {
     display: none;
-  } /* Hide arrows if too cramped */
+  } 
   .horizontal-scroll-carousel {
     padding: 10px 5px;
   }
