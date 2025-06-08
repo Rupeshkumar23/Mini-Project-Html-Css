@@ -509,7 +509,7 @@ img {
 /* Pricing Section Specific Styles */
 .pricing-area {
   position: relative;
-  background-color: #F8F7FD;
+  background-color: #f8f7fd;
   z-index: 1;
 }
 
@@ -709,6 +709,399 @@ img {
   filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.295));
   opacity: 1;
 }
+/* ==================================================
+   ABOUT SECTION STYLES
+   ================================================== */
+.about-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.about-content h2 {
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+.about-content .divider {
+  width: 70px;
+  height: 4px;
+  background-color: #2c2377;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 35px;
+}
+
+.btn-read-more {
+  display: inline-block;
+  background-color: #2c2377;
+  color: #ffffff;
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover {
+  background-color: #1a1444;
+  color: #ffffff;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* ==================================================
+   CTA SECTION STYLES
+   ================================================== */
+.cta-section {
+  background: linear-gradient(to right, var(--hero-bg-start) 50%,var(--hero-bg-end));
+  padding: 50px 0;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cta-text h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.cta-text p {
+  color: #e0e0e0;
+  font-size: 18px;
+  margin: 0;
+}
+
+.btn-purchase {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2c2377;
+  padding: 14px 45px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn-purchase:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+/* ==================================================
+   SERVICES SECTION STYLES
+   ================================================== */
+.services-section {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+/* Re-using the section-header class from previous sections */
+.section-header h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #242424;
+}
+
+.section-header p {
+  color: #555555;
+  font-size: 16px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px; /* row-gap column-gap */
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.service-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns with gap */
+  min-width: 280px; /* Prevents items from becoming too small */
+  text-align: center;
+}
+
+.service-icon {
+  margin-bottom: 25px;
+}
+
+.service-icon img {
+  height: 75px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon img {
+  transform: translateY(-8px);
+}
+
+.service-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* ==================================================
+   LOVE SERVICE SECTION STYLES
+   ================================================== */
+.love-service-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.love-service-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.love-service-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.love-service-content {
+    flex: 1;
+}
+
+.love-service-content h2,
+.love-service-content h3 {
+    font-weight: 700;
+    color: #242424;
+    line-height: 1.3;
+}
+.love-service-content h2 {
+    font-size: 32px;
+}
+.love-service-content h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.love-service-content .divider {
+    width: 70px;
+    height: 4px;
+    background-color: #2c2377;
+    margin-bottom: 25px;
+}
+
+.love-service-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px; /* row-gap column-gap */
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.feature-list li i {
+    color: #2c2377;
+    font-size: 18px;
+}
+
+/* ==================================================
+   TESTIMONIALS SECTION STYLES
+   ================================================== */
+.testimonials-section {
+    background-color: #F8F7FD;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-wrapper {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    flex: 1;
+    max-width: 500px;
+}
+
+.testimonial-card p.quote {
+    font-style: italic;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    min-height: 100px; /* Ensures cards have a similar height */
+}
+
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-details h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #242424;
+}
+
+.author-details span {
+    font-size: 14px;
+    color: #777;
+}
+
+.quote-icon img {
+    width: 90px;
+}
+
+.testimonial-nav {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-nav:hover {
+    background-color: #43e8e0;
+    border-color: #43e8e0;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* ==================================================
+   CLIENTS SECTION STYLES
+   ================================================== */
+.clients-section {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.client-logo img {
+    width: 90px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.clients-shape {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: auto;
+  bottom: 50%;
+  left: 5%;
+  border-radius: 50%;
+  background-color: var(--light-teal); /* Turquoise color from image */
+  z-index: 11;
+   filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.295));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-shape::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #fff; /* Inner circle color */
+  border-radius: 50%;
+}
 
 /* --- Responsive Design --- */
 @media (max-width: 1163px) {
@@ -721,7 +1114,7 @@ img {
   .pricing-shape-2 {
     display: none;
   }
-   .pricing-price {
+  .pricing-price {
     margin-top: -100px;
   }
 }
@@ -734,7 +1127,6 @@ img {
   .container {
     max-width: 720px;
   }
- 
 }
 @media (min-width: 992px) {
   .container {
@@ -985,4 +1377,101 @@ img {
     width: 100%;
     margin-top: 10px;
   }
+}
+@media (max-width: 992px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-image {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .cta-text h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 992px) {
+  .service-item {
+    flex-basis: calc(50% - 15px); /* 2 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+  .service-item {
+    flex-basis: 100%; /* 1 column */
+  }
+}
+@media (max-width: 992px) {
+    .love-service-wrapper {
+        flex-direction: column-reverse; /* Puts content above image on mobile */
+        text-align: center;
+    }
+    .love-service-content .divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-list {
+        justify-content: center;
+    }
+    .testimonials-wrapper {
+        flex-direction: column;
+    }
+    .testimonial-nav {
+        display: none; /* Hiding nav buttons on smaller screens for simplicity */
+    }
+    .clients-shape {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .love-service-section, .testimonials-section {
+        padding: 60px 0;
+    }
+    .clients-section {
+        padding: 50px 0;
+    }
+    .love-service-content h2 {
+        font-size: 28px;
+    }
+    .love-service-content h3 {
+        font-size: 26px;
+    }
+    .testimonial-card {
+        padding: 30px;
+    }
+    .testimonial-card p.quote {
+        min-height: auto;
+    }
 }
