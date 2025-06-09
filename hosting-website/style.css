@@ -459,6 +459,7 @@ img {
 .choose-us-details h3 {
   font-size: 28px;
   margin-bottom: 15px;
+  margin-right: 40px;
 }
 .choose-us-details p {
   color: var(--text-muted);
