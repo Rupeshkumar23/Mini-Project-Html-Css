@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ======= HEADER - START ======= -->
     <header class="site-header">
       <!-- Top Bar -->
       <div class="header-top">
@@ -55,13 +56,14 @@
             >
           </a>
 
-          <!-- Hidden checkbox to control the menu state -->
+          <!-- Hidden checkbox to control the menu state for mobile -->
           <input
             type="checkbox"
             id="menu-toggle-checkbox"
             class="menu-toggle-checkbox"
           />
 
+          <!-- Main Navigation Menu -->
           <nav class="main-nav">
             <ul>
               <li><a href="#" class="active">Home</a></li>
@@ -76,13 +78,15 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
+
+          <!-- Header Actions (Search, Cart, Menu Toggle) -->
           <div class="header-actions">
             <a href="#" class="icon-link"><i class="fa-solid fa-search"></i></a>
             <a href="#" class="icon-link"
               ><i class="fa-solid fa-shopping-cart"></i
             ></a>
 
-            <!-- Label for the checkbox to toggle menu -->
+            <!-- Label for the checkbox to toggle menu on mobile -->
             <label for="menu-toggle-checkbox" class="menu-toggle">
               <i class="fa-solid fa-bars menu-icon-open"></i>
               <i class="fa-solid fa-times menu-icon-close"></i>
@@ -91,8 +95,10 @@
         </div>
       </div>
     </header>
+    <!-- ======= HEADER - END ======= -->
 
     <main>
+      <!-- ======= HERO SECTION - START ======= -->
       <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-content">
@@ -111,7 +117,9 @@
           </div>
         </div>
       </section>
+      <!-- ======= HERO SECTION - END ======= -->
 
+      <!-- ======= DOMAIN SEARCH SECTION - START ======= -->
       <section class="domain-search-section">
         <div class="container">
           <div class="search-box">
@@ -141,12 +149,13 @@
           </div>
         </div>
       </section>
+      <!-- ======= DOMAIN SEARCH SECTION - END ======= -->
 
       <!-- ======= WHY CHOOSE US SECTION - START ======= -->
       <section class="why-choose-us-section">
         <div class="decorative-circles">
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
         </div>
         <div class="container">
           <div class="section-header">
@@ -159,121 +168,111 @@
           </div>
           <div class="choose-us-content">
             <div class="choose-us-tabs">
-                <ul>
-                    <li class="active">Guaranteed Security</li>
-                    <li>Advanced Technology</li>
-                    <li>Boost Credibility</li>
-                    <li>Free Update</li>
-                </ul>
+              <ul>
+                <li class="active">Guaranteed Security</li>
+                <li>Advanced Technology</li>
+                <li>Boost Credibility</li>
+                <li>Free Update</li>
+              </ul>
             </div>
             <div class="choose-us-details">
-                <div class="details-image">
-                    <img src="images/database-security.png" alt="Guaranteed Security Illustration">
-                </div>
-                <h3>Guaranteed Security</h3>
-                <p>
-                    But I must explain to you how all this mistaken idea of denouncin pleasure and praising pain was.
-                </p>
+              <div class="details-image">
+                <img
+                  src="images/database-security.png"
+                  alt="Guaranteed Security Illustration"
+                />
+              </div>
+              <h3>Guaranteed Security</h3>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncin pleasure and praising pain was.
+              </p>
             </div>
           </div>
         </div>
       </section>
       <!-- ======= WHY CHOOSE US SECTION - END ======= -->
 
-
       <!-- ======= PRICING PLAN SECTION - START ======= -->
-     <section class="pricing-area pt-120 pb-120">
-    <!-- Decorative circles -->
-    <div class="pricing-shape-1"></div>
-    <div class="pricing-shape-2"></div>
-
-    <div class="container">
-        <div class="row justify-content-center">
+      <section class="pricing-area pt-120 pb-120">
+        <div class="pricing-shape-1"></div>
+        <div class="pricing-shape-2"></div>
+        <div class="container">
+          <div class="row justify-content-center">
             <div class="col-lg-6">
-                <div class="section-title text-center mb-50">
-                    <h2>OUR PRICING PLAN</h2>
-                    <p>Norem tosum dolor sitsim ametam gnsing elit per sed do eiusmod teimpor sittem elit inuning ut sed sittem do eiusmod.</p>
-                </div>
+              <div class="section-title text-center mb-50">
+                <h2>OUR PRICING PLAN</h2>
+                <p>
+                  Norem tosum dolor sitsim ametam gnsing elit per sed do eiusmod
+                  teimpor sittem elit inuning ut sed sittem do eiusmod.
+                </p>
+              </div>
             </div>
-        </div>
-
-  <div class="row justify-content-center">
-    <!-- Single Price: Start Up -->
-    <div class="col-lg-4 col-md-6">
-        <div class="pricing-item pricing-item-startup">
-            <div class="pricing-header">
-                <!-- Title Removed -->
-            </div>
-            <div class="pricing-body">
-                <div class="pricing-price">
-                    <span>$39.99</span>/Monthly
-                </div>
-                <ul class="pricing-features">
-                  <div class="hr_top"></div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- Single Price: Start Up -->
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item pricing-item-startup">
+                <div class="pricing-header"></div>
+                <div class="pricing-body">
+                  <div class="pricing-price"><span>$39.99</span>/Monthly</div>
+                  <ul class="pricing-features">
+                    <div class="hr_top"></div>
                     <li>10 GB Ram</li>
                     <li>7/24 Suport</li>
                     <li>50 GB SSD Storage</li>
                     <li>Montly Backup</li>
                     <li>Unlimited Bandwidth</li>
                     <div class="hr_bottom"></div>
-                </ul> 
-                <a href="#" class="pricing-btn">Choose Plan</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Single Price: Premium (Featured) -->
-    <div class="col-lg-4 col-md-6">
-        <div class="pricing-item active pricing-item-premium">
-            <div class="pricing-header">
-                <!-- Title Removed -->
-            </div>
-            <div class="pricing-body">
-                <div class="pricing-price">
-                    <span>$59.99</span>/Monthly
+                  </ul>
+                  <a href="#" class="pricing-btn">Choose Plan</a>
                 </div>
-                <ul class="pricing-features">
+              </div>
+            </div>
+            <!-- Single Price: Premium (Featured) -->
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item active pricing-item-premium">
+                <div class="pricing-header"></div>
+                <div class="pricing-body">
+                  <div class="pricing-price"><span>$59.99</span>/Monthly</div>
+                  <ul class="pricing-features">
                     <div class="hr_top"></div>
                     <li>10 GB Ram</li>
                     <li>7/24 Suport</li>
                     <li>50 GB SSD Storage</li>
                     <li>Montly Backup</li>
                     <li>Unlimited Bandwidth</li>
-                     <div class="hr_bottom"></div>
-                </ul>
-                <a href="#" class="pricing-btn">Choose Plan</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Single Price: Diamond -->
-    <div class="col-lg-4 col-md-6">
-        <div class="pricing-item pricing-item-diamond">
-            <div class="pricing-header">
-                <!-- Title Removed -->
-            </div>
-            <div class="pricing-body">
-                <div class="pricing-price">
-                    <span>$89.99</span>/Yearly
+                    <div class="hr_bottom"></div>
+                  </ul>
+                  <a href="#" class="pricing-btn">Choose Plan</a>
                 </div>
-                <ul class="pricing-features">
+              </div>
+            </div>
+            <!-- Single Price: Diamond -->
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item pricing-item-diamond">
+                <div class="pricing-header"></div>
+                <div class="pricing-body">
+                  <div class="pricing-price"><span>$89.99</span>/Yearly</div>
+                  <ul class="pricing-features">
                     <div class="hr_top"></div>
                     <li>10 GB Ram</li>
                     <li>7/24 Suport</li>
                     <li>50 GB SSD Storage</li>
                     <li>Montly Backup</li>
                     <li>Unlimited Bandwidth</li>
-                     <div class="hr_bottom"></div>
-                </ul>
-                <a href="#" class="pricing-btn">Choose Plan</a>
+                    <div class="hr_bottom"></div>
+                  </ul>
+                  <a href="#" class="pricing-btn">Choose Plan</a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-    </div>
-</section>
-       <!-- ======= PRICING PLAN SECTION - END ======= -->
-<!-- ======= ABOUT SECTION - START ======= -->
+      </section>
+      <!-- ======= PRICING PLAN SECTION - END ======= -->
+
+      <!-- ======= ABOUT SECTION - START ======= -->
       <section class="about-section">
         <div class="container">
           <div class="about-wrapper">
@@ -281,7 +280,12 @@
               <h2>WE ARE THE BEST HOSTING SOLUTION FOR YOUR BUSINESS</h2>
               <div class="divider"></div>
               <p>
-                But I must explain to you how all this mistaken idea denounc pleasure and praising pain was born and I will give you a complete account system and expound the actual teachings of the great explorer of the tmasterbo human happiness. No one rejects, dislikes or avoids pleasure itself because it is pleasure but because those.
+                But I must explain to you how all this mistaken idea denounc
+                pleasure and praising pain was born and I will give you a
+                complete account system and expound the actual teachings of the
+                great explorer of the tmasterbo human happiness. No one rejects,
+                dislikes or avoids pleasure itself because it is pleasure but
+                because those.
               </p>
               <a href="#" class="btn-read-more">Read More</a>
             </div>
@@ -293,30 +297,30 @@
       </section>
       <!-- ======= ABOUT SECTION - END ======= -->
 
-
-      <!-- ======= CTA SECTION - START ======= -->
+      <!-- ======= CTA (Call To Action) SECTION - START ======= -->
       <section class="cta-section">
-          <div class="container cta-container">
-              <div class="cta-text">
-                  <h2>Do you want to purchase BDevs?</h2>
-                  <p>Please registration now</p>
-              </div>
-              <div class="cta-action">
-                  <a href="#" class="btn-purchase">Purchase</a>
-              </div>
+        <div class="container cta-container">
+          <div class="cta-text">
+            <h2>Do you want to purchase BDevs?</h2>
+            <p>Please registration now</p>
           </div>
+          <div class="cta-action">
+            <a href="#" class="btn-purchase">Purchase</a>
+          </div>
+        </div>
       </section>
-      <!-- ======= CTA SECTION - END ======= -->
-       <!-- ======= SERVICES SECTION - START ======= -->
+      <!-- ======= CTA (Call To Action) SECTION - END ======= -->
+
+      <!-- ======= SERVICES SECTION - START ======= -->
       <section class="services-section">
         <div class="container">
           <div class="section-header">
             <h2>SERVICE WE PROVIDE</h2>
             <p>
-              Norem tosum dolor sittem ametamngcing elit per sed do eiusmod teimpor sittem elit inuning ut sed sittem do eiusmod.
+              Norem tosum dolor sittem ametamngcing elit per sed do eiusmod
+              teimpor sittem elit inuning ut sed sittem do eiusmod.
             </p>
           </div>
-
           <div class="services-grid">
             <!-- Service Item 1: Web Hosting -->
             <div class="service-item">
@@ -325,43 +329,52 @@
               </div>
               <h3>Web Hosting</h3>
               <p>
-                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde omnis iste natus error sit volupta.
+                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde
+                omnis iste natus error sit volupta.
               </p>
             </div>
-
             <!-- Service Item 2: Shared Hosting -->
             <div class="service-item">
               <div class="service-icon">
-                <img src="images/shared-hosting.png" alt="Shared Hosting Icon" />
+                <img
+                  src="images/shared-hosting.png"
+                  alt="Shared Hosting Icon"
+                />
               </div>
               <h3>Shared Hosting</h3>
               <p>
-                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde omnis iste natus error sit volupta.
+                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde
+                omnis iste natus error sit volupta.
               </p>
             </div>
-
             <!-- Service Item 3: Reseller Hosting -->
             <div class="service-item">
               <div class="service-icon">
-                <img src="images/reseller-hosting.png" alt="Reseller Hosting Icon" />
+                <img
+                  src="images/reseller-hosting.png"
+                  alt="Reseller Hosting Icon"
+                />
               </div>
               <h3>Reseller Hosting</h3>
               <p>
-                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde omnis iste natus error sit volupta.
+                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde
+                omnis iste natus error sit volupta.
               </p>
             </div>
-
             <!-- Service Item 4: Dedicated Hosting -->
             <div class="service-item">
               <div class="service-icon">
-                <img src="images/dedicated-hosting.png" alt="Dedicated Hosting Icon" />
+                <img
+                  src="images/dedicated-hosting.png"
+                  alt="Dedicated Hosting Icon"
+                />
               </div>
               <h3>Dedicated Hosting</h3>
               <p>
-                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde omnis iste natus error sit volupta.
+                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde
+                omnis iste natus error sit volupta.
               </p>
             </div>
-
             <!-- Service Item 5: VPS Hosting -->
             <div class="service-item">
               <div class="service-icon">
@@ -369,10 +382,10 @@
               </div>
               <h3>VPS Hosting</h3>
               <p>
-                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde omnis iste natus error sit volupta.
+                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde
+                omnis iste natus error sit volupta.
               </p>
             </div>
-
             <!-- Service Item 6: Cloud Hosting -->
             <div class="service-item">
               <div class="service-icon">
@@ -380,212 +393,253 @@
               </div>
               <h3>Cloud Hosting</h3>
               <p>
-                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde omnis iste natus error sit volupta.
+                Sed perspiciatis unde omnis natus erroSed ut perspiciatis unde
+                omnis iste natus error sit volupta.
               </p>
             </div>
-
           </div>
         </div>
       </section>
       <!-- ======= SERVICES SECTION - END ======= -->
-       <!-- ======= LOVE SERVICE SECTION - START ======= -->
+
+      <!-- ======= LOVE SERVICE SECTION - START ======= -->
       <section class="love-service-section">
-          <div class="container">
-              <div class="love-service-wrapper">
-                  <div class="love-service-image">
-                      <img src="images/data-cloud.png" alt="Cloud Database Illustration">
-                  </div>
-                  <div class="love-service-content">
-                      <h2>WHY YOU LOVE OUR SERVICE!</h2>
-                      <h3>SOMETHING KNOW OUR HISTORY.</h3>
-                      <div class="divider"></div>
-                      <p>But I must explain to you how all this mistaken idea denounc pleasure and praising pain was born and I will give you a complete.</p>
-                      <ul class="feature-list">
-                          <li><i class="fas fa-archive"></i> Best Services Provider</li>
-                          <li><i class="fas fa-archive"></i> Advance Features & Technology</li>
-                          <li><i class="fas fa-archive"></i> 100% Safe & Security</li>
-                          <li><i class="fas fa-archive"></i> Low Price Renew Facilities</li>
-                      </ul>
-                  </div>
-              </div>
+        <div class="container">
+          <div class="love-service-wrapper">
+            <div class="love-service-image">
+              <img
+                src="images/data-cloud.png"
+                alt="Cloud Database Illustration"
+              />
+            </div>
+            <div class="love-service-content">
+              <h2>WHY YOU LOVE OUR SERVICE!</h2>
+              <h3>SOMETHING KNOW OUR HISTORY.</h3>
+              <div class="divider"></div>
+              <p>
+                But I must explain to you how all this mistaken idea denounc
+                pleasure and praising pain was born and I will give you a
+                complete.
+              </p>
+              <ul class="feature-list">
+                <li><i class="fas fa-archive"></i> Best Services Provider</li>
+                <li>
+                  <i class="fas fa-archive"></i> Advance Features & Technology
+                </li>
+                <li><i class="fas fa-archive"></i> 100% Safe & Security</li>
+                <li>
+                  <i class="fas fa-archive"></i> Low Price Renew Facilities
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
       </section>
       <!-- ======= LOVE SERVICE SECTION - END ======= -->
 
-
       <!-- ======= TESTIMONIALS SECTION - START ======= -->
       <section class="testimonials-section">
-          <div class="container">
-              <div class="section-header">
-                  <h2>WHAT OUR CLIENTS SAY</h2>
-                  <p>Norem tosum dolor sittem ametamngcing elit per sed do eiusmod teimpor sittem elit inuning ut sed sittem do eiusmod.</p>
-              </div>
-
-              <div class="testimonials-wrapper">
-                  <button class="testimonial-nav prev">|←</button>
-                  
-                  <div class="testimonial-card">
-                      <p class="quote">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"</p>
-                      <div class="testimonial-footer">
-                          <div class="author-info">
-                              <img src="images/man-3.png" alt="Dennis N. Vang">
-                              <div class="author-details">
-                                  <h4>Dennis N. Vang</h4>
-                                  <span>Web Designer</span>
-                              </div>
-                          </div>
-                          <div class="quote-icon">
-                              <img src="images/double-qoutes.png" alt="Quote Icon">
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="testimonial-card">
-                      <p class="quote">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"</p>
-                       <div class="testimonial-footer">
-                          <div class="author-info">
-                              <img src="images/girl-4.png" alt="Alyson V. Linzy">
-                              <div class="author-details">
-                                  <h4>Alyson V. Linzy</h4>
-                                  <span>Web Designer</span>
-                              </div>
-                          </div>
-                          <div class="quote-icon">
-                              <img src="images/double-qoutes.png" alt="Quote Icon">
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <button class="testimonial-nav next">→|</button>
-              </div>
+        <div class="container">
+          <div class="section-header">
+            <h2>WHAT OUR CLIENTS SAY</h2>
+            <p>
+              Norem tosum dolor sittem ametamngcing elit per sed do eiusmod
+              teimpor sittem elit inuning ut sed sittem do eiusmod.
+            </p>
           </div>
-        </section>
-        <!-- ======= TESTIMONIALS SECTION - END ======= -->
-        
-        <!-- ======= CLIENTS SECTION - START ======= -->
-        <section class="clients-section">
-          <!-- Decorative circle from image -->
-          <div class="clients-shape"></div>
-        
-          <div class="container">
-              <div class="clients-logos">
-                  <div class="client-logo"><img src="images/mc-queen.png" alt="McQueen Logo"></div>
-                  <div class="client-logo"><img src="images/the-vintage.png" alt="The Vintage Logo"></div>
-                  <div class="client-logo"><img src="images/alien-valley.png" alt="Alien Valley Logo"></div>
-                  <div class="client-logo"><img src="images/jefferson.png" alt="Jefferson Logo"></div>
-                  <div class="client-logo"><img src="images/the-eagle.png" alt="Eagle Logo"></div>
-                  <div class="client-logo"><img src="images/foodball-club.png" alt="Football Logo"></div>
+          <div class="testimonials-wrapper">
+            <button class="testimonial-nav prev">|←</button>
+            <div class="testimonial-card">
+              <p class="quote">
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore"
+              </p>
+              <div class="testimonial-footer">
+                <div class="author-info">
+                  <img src="images/man-3.png" alt="Dennis N. Vang" />
+                  <div class="author-details">
+                    <h4>Dennis N. Vang</h4>
+                    <span>Web Designer</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <img src="images/double-qoutes.png" alt="Quote Icon" />
+                </div>
               </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore"
+              </p>
+              <div class="testimonial-footer">
+                <div class="author-info">
+                  <img src="images/girl-4.png" alt="Alyson V. Linzy" />
+                  <div class="author-details">
+                    <h4>Alyson V. Linzy</h4>
+                    <span>Web Designer</span>
+                  </div>
+                </div>
+                <div class="quote-icon">
+                  <img src="images/double-qoutes.png" alt="Quote Icon" />
+                </div>
+              </div>
+            </div>
+            <button class="testimonial-nav next">→|</button>
           </div>
+        </div>
+      </section>
+      <!-- ======= TESTIMONIALS SECTION - END ======= -->
+
+      <!-- ======= CLIENTS SECTION - START ======= -->
+      <section class="clients-section">
+        <div class="clients-shape"></div>
+        <div class="container">
+          <div class="clients-logos">
+            <div class="client-logo">
+              <img src="images/mc-queen.png" alt="McQueen Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/the-vintage.png" alt="The Vintage Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/alien-valley.png" alt="Alien Valley Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/jefferson.png" alt="Jefferson Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/the-eagle.png" alt="Eagle Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/foodball-club.png" alt="Football Logo" />
+            </div>
+          </div>
+        </div>
       </section>
       <!-- ======= CLIENTS SECTION - END ======= -->
-       <!-- ======= FOOTER SECTION - START ======= -->
-    <footer class="site-footer-final">
+
+      <!-- ======= FOOTER SECTION - START ======= -->
+      <footer class="site-footer-final">
+        <!-- Footer Top: Contact Info -->
         <div class="footer-top-final">
-            <div class="container">
-                <div class="footer-contact-info">
-                    <div class="footer-contact-item">
-                        <i class="fas fa-headphones-alt"></i>
-                        <span>|</span>
-                        <span>0123456789</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="far fa-envelope"></i>
-                         <span>|</span>
-                        <span>support@gmail.com</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-home"></i>
-                         <span>|</span>
-                        <span>123 Main road, C Block, USA</span>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="footer-contact-info">
+              <div class="footer-contact-item">
+                <i class="fas fa-headphones-alt"></i><span>|</span
+                ><span>0123456789</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="far fa-envelope"></i><span>|</span
+                ><span>support@gmail.com</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-home"></i><span>|</span
+                ><span>123 Main road, C Block, USA</span>
+              </div>
             </div>
+          </div>
         </div>
-
+        <!-- Footer Main: Widgets -->
         <div class="footer-main-final">
-            <div class="container">
-                <div class="footer-widgets-final">
-                    <!-- Widget: Our Services -->
-                    <div class="footer-widget-final">
-                        <h3 class="widget-title">Our Services</h3>
-                        <ul>
-                            <li><a href="#">Web Hosting</a></li>
-                            <li><a href="#">Shared Hosting</a></li>
-                            <li><a href="#">Reseller Hosting</a></li>
-                            <li><a href="#">Cloud Hosting</a></li>
-                            <li><a href="#">VPS Hosting</a></li>
-                            <li><a href="#">Dedicated Hosting</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Widget: Quick Links -->
-                    <div class="footer-widget-final widget-quick-links">
-                        <h3 class="widget-title">Quick Links</h3>
-                        <div class="links-container">
-                            <ul>
-                                <li><a href="#">Home Page</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Search Domain</a></li>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Support Center</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Latest News</a></li>
-                                <li><a href="#">Our Clients</a></li>
-                                <li><a href="#">Company History</a></li>
-                                <li><a href="#">Setting Services</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Widget: Newsletter -->
-                    <div class="footer-widget-final widget-newsletter">
-                        <h3 class="widget-title">Newsletter</h3>
-                        <p>Subscribe to our list to get the updates to your email</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
+          <div class="container">
+            <div class="footer-widgets-final">
+              <!-- Widget: Our Services -->
+              <div class="footer-widget-final">
+                <h3 class="widget-title">Our Services</h3>
+                <ul>
+                  <li><a href="#">Web Hosting</a></li>
+                  <li><a href="#">Shared Hosting</a></li>
+                  <li><a href="#">Reseller Hosting</a></li>
+                  <li><a href="#">Cloud Hosting</a></li>
+                  <li><a href="#">VPS Hosting</a></li>
+                  <li><a href="#">Dedicated Hosting</a></li>
+                </ul>
+              </div>
+              <!-- Widget: Quick Links -->
+              <div class="footer-widget-final widget-quick-links">
+                <h3 class="widget-title">Quick Links</h3>
+                <div class="links-container">
+                  <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Search Domain</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Company History</a></li>
+                    <li><a href="#">Setting Services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
                 </div>
+              </div>
+              <!-- Widget: Newsletter -->
+              <div class="footer-widget-final widget-newsletter">
+                <h3 class="widget-title">Newsletter</h3>
+                <p>Subscribe to our list to get the updates to your email</p>
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Enter your email" />
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
-
+        <!-- Footer Bottom: About, Socials, Copyright -->
         <div class="footer-bottom-final">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <div class="footer-about">
-                        <a href="#" class="footer-logo">
-                            <img src="images/logo.png" alt="BDevs Footer Logo">
-                            <span><b class="footer_fl">B</b>Devs</span>
-                        </a>
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the syste anpound the actual teachings of the great explorer of the truththe maste.</p>
-                    </div>
-                    <div class="footer-social">
-                        <h4 class="widget-title">Follow Us</h4>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="active" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="Google Plus"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="footer-bottom-content">
+              <div class="footer-about">
+                <a href="#" class="footer-logo">
+                  <img src="images/logo.png" alt="BDevs Footer Logo" />
+                  <span><b class="footer_fl">B</b>Devs</span>
+                </a>
+                <p>
+                  But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the syste anpound the actual
+                  teachings of the great explorer of the truththe maste.
+                </p>
+              </div>
+              <div class="footer-social">
+                <h4 class="widget-title">Follow Us</h4>
+                <div class="social-links">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="active" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="Google Plus"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" aria-label="Dribbble"
+                    ><i class="fab fa-dribbble"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </div>
-                 <div class="footer-copyright-final">
-                    <p class="copyright-text">2018 Your Company. All Rights Reserved. Designed By BDevs.</p>
-                    <div class="payment-methods">
-                        <img src="images/payment-card.png" alt="Visa">
-                       
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="footer-copyright-final">
+              <p class="copyright-text">
+                2018 Your Company. All Rights Reserved. Designed By BDevs.
+              </p>
+              <div class="payment-methods">
+                <img src="images/payment-card.png" alt="Visa" />
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- ======= FOOTER SECTION - END ======= -->
+      </footer>
+      <!-- ======= FOOTER SECTION - END ======= -->
     </main>
   </body>
 </html>
