@@ -301,7 +301,7 @@ img {
       bottom / 100% auto no-repeat,
     linear-gradient(
       to bottom right,
-      var(--hero-bg-start) 30%,
+      var(--hero-bg-start) 45%,
       var(--hero-bg-end)
     );
   padding: 220px 0 380px 0;
