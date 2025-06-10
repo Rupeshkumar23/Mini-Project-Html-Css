@@ -208,8 +208,8 @@ img {
   display: flex;
   gap: 20px;
 }
-.social-icons::before{
-  content: '';
+.social-icons::before {
+  content: "";
   background: var(--border-light);
   border-right: 2px solid var(--text-tertiary);
 }
@@ -297,7 +297,7 @@ img {
    05. HERO SECTION
    ================================================== */
 .hero-section {
-   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white'%3E%3C!-- Unchanged central clouds --%3E%3Ccircle cx='210' cy='585' r='65'/%3E%3Ccircle cx='300' cy='570' r='80'/%3E%3Ccircle cx='420' cy='580' r='90'/%3E%3Ccircle cx='550' cy='560' r='85'/%3E%3Ccircle cx='480' cy='610' r='60'/%3E%3Ccircle cx='250' cy='600' r='50'/%3E%3Ccircle cx='620' cy='605' r='55'/%3E%3C!-- Modified Left Side Clouds --%3E%3Ccircle cx='0' cy='575' r='85'/%3E%3Ccircle cx='90' cy='560' r='80'/%3E%3Ccircle cx='-20' cy='590' r='60'/%3E%3C!-- Modified Right Side Clouds --%3E%3Ccircle cx='800' cy='570' r='90'/%3E%3Ccircle cx='680' cy='570' r='80'/%3E%3Ccircle cx='750' cy='595' r='65'/%3E%3C!-- Unchanged base rectangle --%3E%3Crect y='580' width='800' height='40'/%3E%3C/g%3E%3C/svg%3E")
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white'%3E%3C!-- Unchanged central clouds --%3E%3Ccircle cx='210' cy='585' r='65'/%3E%3Ccircle cx='300' cy='570' r='80'/%3E%3Ccircle cx='420' cy='580' r='90'/%3E%3Ccircle cx='550' cy='560' r='85'/%3E%3Ccircle cx='480' cy='610' r='60'/%3E%3Ccircle cx='250' cy='600' r='50'/%3E%3Ccircle cx='620' cy='605' r='55'/%3E%3C!-- Modified Left Side Clouds --%3E%3Ccircle cx='0' cy='575' r='85'/%3E%3Ccircle cx='90' cy='560' r='80'/%3E%3Ccircle cx='-20' cy='590' r='60'/%3E%3C!-- Modified Right Side Clouds --%3E%3Ccircle cx='800' cy='570' r='90'/%3E%3Ccircle cx='680' cy='570' r='80'/%3E%3Ccircle cx='750' cy='595' r='65'/%3E%3C!-- Unchanged base rectangle --%3E%3Crect y='580' width='800' height='40'/%3E%3C/g%3E%3C/svg%3E")
       bottom / 100% auto no-repeat,
     linear-gradient(
       to bottom right,
@@ -944,6 +944,7 @@ img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.295));
 }
 .author-details h4 {
   margin: 0 0 5px 0;
@@ -1203,10 +1204,9 @@ img {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.footer-social .social-links a:hover
- {
+.footer-social .social-links a:hover {
   color: var(--brand-primary);
-  background:var(--light-teal);
+  background: var(--light-teal);
   border-color: var(--light-teal);
 }
 .footer-copyright-final {
@@ -1474,7 +1474,7 @@ img {
     flex-basis: 100% !important;
     text-align: center;
   }
-  .widget-title{
+  .widget-title {
     text-align: center;
   }
   .widget-title::after {
@@ -1507,7 +1507,7 @@ img {
     width: 100%;
     margin-left: 0;
   }
-  .footer-social .social-links{
+  .footer-social .social-links {
     justify-content: center;
   }
   .newsletter-form input {
