@@ -256,7 +256,7 @@ img {
   padding: 10px 0;
   color: var(--text-dark);
 }
-.main-nav ul li a.active,
+
 .main-nav ul li a:hover {
   color: var(--nav-active-link);
 }
@@ -1203,8 +1203,8 @@ img {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.footer-social .social-links a:hover,
-.footer-social .social-links a.active {
+.footer-social .social-links a:hover
+ {
   color: var(--brand-primary);
   background:var(--light-teal);
   border-color: var(--light-teal);

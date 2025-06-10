@@ -1,0 +1,162 @@
+/* ==================================================
+  404 PAGE STYLES
+================================================== */
+
+/* ======= PAGE HEADER SECTION ======= */
+.page-header-section {
+    background: linear-gradient(to bottom right, var(--hero-bg-start) 30%, var(--hero-bg-end));
+    color: var(--text-light);
+    margin-top: 100px;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.page-header-content h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: var(--text-light);
+}
+
+.page-header-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.page-header-content .price {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+
+
+/* ======= ERROR CONTENT SECTION ======= */
+.error-section {
+    padding: 120px 0;
+    background-color: var(--section-bg);
+}
+
+.error-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.error-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.error-digit {
+    font-family: 'Poppins', sans-serif;
+    font-size: 220px;
+    font-weight: 400;
+    color: #5D6FBB; /* Light blue-gray from image */
+    line-height: 1;
+}
+
+.error-magnifier {
+    width: 180px;
+    height: auto;
+    margin: 0 -15px;
+    position: relative;
+    top: -20px; /* Aligns magnifier vertically with the numbers */
+}
+
+.error-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.btn-go-home {
+    display: inline-block;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 15px 40px;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-go-home:hover {
+    background-color: var(--theme-purple);
+    color: var(--text-light);
+}
+
+
+/* ==================================================
+  RESPONSIVE STYLES for 404 PAGE
+================================================== */
+
+@media (max-width: 992px) {
+    .page-header-image {
+        display: none;
+    }
+     .page-header-section {
+        padding: 250px 0;
+        margin-top: 0; 
+    }
+   
+    .page-header-container {
+        justify-content: center;
+    }
+     .page-header-content {
+        text-align: center;
+    }
+    .error-digit {
+        font-size: 180px;
+    }
+    .error-magnifier {
+        width: 140px;
+    }
+    .error-title {
+        font-size: 60px;
+    }
+    .error-message {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* When header becomes static, reset the spacing adjustments */
+    .page-header-section {
+        padding: 100px 0;
+        margin-top: 0; 
+    }
+     .error-section {
+        padding: 80px 15px;
+    }
+    .error-digit {
+        font-size: 120px;
+    }
+    .error-magnifier {
+        width: 100px;
+        margin: 0 -5px;
+        top: -10px;
+    }
+    .error-title {
+        font-size: 48px;
+    }
+    .error-message {
+        font-size: 18px;
+    }
+}
