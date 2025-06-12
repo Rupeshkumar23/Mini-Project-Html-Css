@@ -256,6 +256,9 @@ img {
   padding: 10px 0;
   color: var(--text-dark);
 }
+.main-nav ul li a.active-link {
+  color: var(--nav-active-link);
+}
 
 .main-nav ul li a:hover {
   color: var(--nav-active-link);
@@ -873,7 +876,7 @@ img {
   justify-content: center;
 }
 .service-item {
-  flex: 1 1 calc(33.333% - 30px);
+  flex: 1 1 calc(33% - 30px);
   min-width: 280px;
   text-align: center;
 }
@@ -1230,6 +1233,9 @@ img {
 
 /* --- Laptops & Medium Devices (max-width: 992px) --- */
 @media (max-width: 992px) {
+  img{
+    margin-top: -200px;
+  }
   /* Header & Nav */
   .main-header .container {
     flex-wrap: wrap;

@@ -1,0 +1,169 @@
+/* ==================================================
+SUPPORT PAGE STYLES
+- Support Hero Section
+- FAQ Section
+- Support CTA Section
+- Responsive Adjustments
+================================================== */
+
+/* Header override for Support page */
+/* On the homepage, the header is absolute. Here, we make it static. */
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  padding: 220px 0 50px 0;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-light);
+}
+
+
+/* ======= SUPPORT HERO SECTION ======= */
+.support-hero {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 30%,
+    var(--hero-bg-end)
+  );
+  padding: 100px 0;
+  color: var(--text-light);
+}
+
+.support-hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.support-hero-content {
+  flex-basis: 50%;
+}
+
+.support-hero-content h1 {
+  color: var(--text-light);
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.support-hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 450px;
+  opacity: 0.9;
+}
+
+.support-hero-image {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+/* ======= FAQ SECTION ======= */
+.faq-section {
+  padding: 100px 0;
+  background-color: var(--section-bg);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px 50px;
+}
+
+.faq-item h2 {
+  font-size: 24px;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.faq-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ======= SUPPORT CTA SECTION ======= */
+.support-cta-section {
+  padding: 80px 0;
+  background: linear-gradient(
+    to right,
+    var(--hero-bg-start) 50%,
+    var(--hero-bg-end)
+  );
+  color: var(--text-light);
+  text-align: center;
+}
+
+.support-cta-section .container {
+  max-width: 600px; /* Center content */
+}
+
+.support-cta-section h2 {
+  color: var(--text-light);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.support-cta-section p {
+  margin: 0 auto 30px auto;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.btn-purchase-support {
+  display: inline-block;
+  padding: 14px 45px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.btn-purchase-support:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 768px) {
+  .support-hero {
+    padding: 60px 0;
+  }
+
+  .support-hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .support-hero-content h1 {
+    font-size: 48px;
+  }
+
+  .support-hero-image {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .faq-section {
+    padding: 80px 0;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .support-cta-section h2 {
+    font-size: 28px;
+  }
+}

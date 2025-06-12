@@ -12,10 +12,6 @@
 /* ==================================================
    01. SHARED & OVERRIDE STYLES
    ================================================== */
-.main-nav ul li a.active-link {
-  color: var(--nav-active-link);
-}
-
 .hero-section {
   background: linear-gradient(
     to bottom right,
@@ -64,7 +60,6 @@
    03. CONTACT INFO CARDS
    ================================================== */
 .contact-cards-section {
-
  padding: 100px 0;
 }
 
@@ -77,7 +72,7 @@
 
 .contact-card {
   flex: 1;
-  max-width: 370px;
+  width: 370px;
   padding: 40px 30px;
   color: var(--text-light);
   text-align: left;
@@ -230,6 +225,12 @@
         order: 1;
         margin-bottom: 30px;
     }
+      .contact-cards-wrapper{
+    flex-direction: column;
+ 
+   align-items: center;
+    }
+   
 }
 
 
@@ -241,7 +242,7 @@
         font-size: 40px;
     }
     .contact-cards-section {
-        margin-top: -200px;
+        margin-top: 20px;
         padding-bottom: 60px;
     }
     .contact-cards-wrapper{
@@ -252,6 +253,7 @@
         flex-direction: column;
         gap: 30px;
     }
+   
  
 }
 
