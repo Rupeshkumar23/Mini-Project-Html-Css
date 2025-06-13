@@ -1233,9 +1233,6 @@ img {
 
 /* --- Laptops & Medium Devices (max-width: 992px) --- */
 @media (max-width: 992px) {
-  img{
-    margin-top: -200px;
-  }
   /* Header & Nav */
   .main-header .container {
     flex-wrap: wrap;
