@@ -670,15 +670,6 @@ img {
   background-color: var(--theme-purple);
   color: var(--text-light);
 }
-.pricing-item.active .pricing-btn {
-  background-color: var(--theme-purple);
-  color: var(--text-light);
-  border-color: var(--theme-purple);
-}
-.pricing-item.active:hover .pricing-btn {
-  background-color: var(--section-bg);
-  color: var(--theme-purple);
-}
 
 .pricing-shape-1,
 .pricing-shape-2 {
