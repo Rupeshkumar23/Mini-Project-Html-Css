@@ -1,0 +1,173 @@
+/* ==================================================
+   WHMCS PAGE SPECIFIC STYLES
+   ==================================================
+   This file builds upon the shared style.css
+   - 01. General & Header Modifier
+   - 02. WHMCS Hero Section
+   - 03. WHMCS Main Content Area (Search & Welcome)
+   - 04. WHMCS CTA Section
+   - 05. WHMCS Clients Section (Modifiers)
+   - 06. Responsive Design
+   ================================================== */
+
+/* ==================================================
+   01. GENERAL & HEADER MODIFIER
+   ================================================== */
+
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  padding: 220px 0 50px 0;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-light);
+}
+
+.whmcs-main-content-area {
+  padding: 80px 0;
+  background-color: var(--section-bg);
+}
+
+.whmcs-search-wrapper {
+  max-width: 800px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.whmcs-search-wrapper h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 30px;
+}
+
+.domain-find-form,
+.verification-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.domain-find-form input,
+.verification-form input {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.domain-find-form input:focus,
+.verification-form input:focus {
+  border-color: var(--primary-color);
+}
+
+.domain-find-form input {
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.btn-search,
+.btn-send-code {
+  border: none;
+  padding: 15px 35px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-search {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+.btn-search:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-send-code {
+  background-color: #00bcd4; /* Teal color from image */
+  color: var(--text-light);
+}
+.btn-send-code:hover {
+  background-color: #0097a7;
+}
+
+.whmcs-welcome-wrapper {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.whmcs-welcome-wrapper h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--black-color);
+}
+
+.whmcs-welcome-wrapper p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* This reuses a button style from style.css */
+.whmcs-welcome-wrapper .btn-read-more {
+  display: inline-block;
+  background-color: var(--theme-purple);
+  color: var(--text-light);
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.whmcs-welcome-wrapper .btn-read-more:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ==================================================
+   06. RESPONSIVE DESIGN
+   ================================================== */
+
+@media (max-width: 768px) {
+
+
+  .whmcs-main-content-area {
+    padding: 60px 0;
+  }
+  .whmcs-search-wrapper,
+  .whmcs-welcome-wrapper {
+    padding: 0 15px;
+  }
+  .whmcs-welcome-wrapper p {
+    text-align: justify;
+  }
+  .domain-find-form,
+  .verification-form {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .domain-find-form input,
+  .verification-form input {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  .btn-search,
+  .btn-send-code {
+    width: 100%;
+    max-width: 400px;
+  }
+}
