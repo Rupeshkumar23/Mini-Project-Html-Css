@@ -1,0 +1,73 @@
+/* ==================================================
+   13. PRIVACY PAGE STYLES
+   ================================================== */
+
+/* --- Privacy Hero Section --- */
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  padding: 220px 0 50px 0;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-light);
+}
+
+/* --- Privacy Content Section --- */
+.privacy-content-section {
+  padding: 100px 0;
+  background-color: var(--section-bg);
+}
+
+.policy-item {
+  background-color: #f8f7fd; 
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.policy-item:last-child {
+  margin-bottom: 0;
+}
+
+.policy-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.policy-item p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-tertiary);
+  text-align: justify;
+}
+
+/* --- Responsive Styles for Privacy Page --- */
+
+@media (max-width: 768px) {
+  .privacy-content-section {
+    padding: 60px 0;
+  }
+
+  .privacy-cta-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .privacy-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .policy-item {
+    padding: 30px 20px;
+  }
+
+  .policy-item h3 {
+    font-size: 20px;
+  }
+}
