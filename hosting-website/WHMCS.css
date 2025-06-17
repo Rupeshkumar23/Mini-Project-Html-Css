@@ -34,7 +34,7 @@
 }
 
 .whmcs-search-wrapper {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 80px auto;
   text-align: center;
 }
@@ -46,7 +46,6 @@
   margin-bottom: 30px;
 }
 
-.domain-find-form,
 .verification-form {
   display: flex;
   justify-content: center;
@@ -54,7 +53,6 @@
   margin-bottom: 20px;
 }
 
-.domain-find-form input,
 .verification-form input {
   padding: 15px 20px;
   font-size: 16px;
@@ -64,17 +62,10 @@
   transition: border-color 0.3s;
 }
 
-.domain-find-form input:focus,
 .verification-form input:focus {
   border-color: var(--primary-color);
 }
 
-.domain-find-form input {
-  flex-grow: 1;
-  max-width: 400px;
-}
-
-.btn-search,
 .btn-send-code {
   border: none;
   padding: 15px 35px;
@@ -83,26 +74,14 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.btn-search {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-}
-.btn-search:hover {
-  background-color: var(--primary-dark);
-}
-
-.btn-send-code {
-  background-color: #00bcd4; /* Teal color from image */
+  background-color: #3c97c2; /* Teal color from image */
   color: var(--text-light);
 }
 .btn-send-code:hover {
-  background-color: #0097a7;
+  background-color: #3483A8;
 }
 
 .whmcs-welcome-wrapper {
-  text-align: center;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -117,7 +96,7 @@
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 40px;
-  text-align: left;
+  text-align: justify;
 }
 
 /* This reuses a button style from style.css */
@@ -129,7 +108,7 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  border-radius: 50px;
+  border-radius: 0px;
   transition: background-color 0.3s ease;
 }
 .whmcs-welcome-wrapper .btn-read-more:hover {
@@ -153,19 +132,16 @@
   .whmcs-welcome-wrapper p {
     text-align: justify;
   }
-  .domain-find-form,
   .verification-form {
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
-  .domain-find-form input,
   .verification-form input {
     width: 100%;
     max-width: 400px;
     text-align: center;
   }
-  .btn-search,
   .btn-send-code {
     width: 100%;
     max-width: 400px;

@@ -124,9 +124,19 @@
           <!-- Domain Search -->
           <div class="whmcs-search-wrapper">
             <h2>Find Your Best Domain Name</h2>
-            <form class="domain-find-form">
+            <form class="search-form">
               <input type="text" placeholder="Search domain name here" />
-              <button type="submit" class="btn-search">SEARCH</button>
+              <div class="select-wrapper">
+                <select name="tld" class="tld-select">
+                  <option value="com">.com</option>
+                  <option value="net">.net</option>
+                  <option value="org">.org</option>
+                  <option value="biz">.biz</option>
+                  <option value="co">.co</option>
+                  <option value="edu">.edu</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-secondary">SEARCH</button>
             </form>
             <form class="verification-form">
               <input type="email" value="Qwa394@qw" readonly />
