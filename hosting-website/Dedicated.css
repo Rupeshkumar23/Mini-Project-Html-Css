@@ -198,7 +198,6 @@
 .table-responsive-wrapper {
   overflow-x: auto;
   background-color: #fff;
-
 }
 
 .dedicated-pricing-table {
@@ -215,7 +214,6 @@
   vertical-align: middle;
 }
 
-
 /* --- Table Borders --- */
 .dedicated-pricing-table tbody th,
 .dedicated-pricing-table tbody td {
@@ -228,17 +226,17 @@
   border-left: 1px solid #eee;
 }
 .dedicated-pricing-table .button-row td:not(:first-child) {
-    border-left: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
-.section-header h2{
+.section-header h2 {
   font-weight: bold;
   color: #333333;
 }
 
 /* --- Table Header (thead) --- */
 .feature-header {
-  background-color: #35298F;
+  background-color: #35298f;
   color: var(--text-light);
   font-size: 18px;
   font-weight: 600;
@@ -250,7 +248,7 @@
 }
 
 .plan-header {
-  background-color: #35298F;
+  background-color: #35298f;
   color: var(--text-light);
   font-size: 18px;
   font-weight: 600;
@@ -258,23 +256,23 @@
 }
 
 .price-header {
-  background-color: #1D1465;
+  background-color: #1d1465;
   color: var(--text-light);
   font-size: 36px;
   font-weight: 600;
   border-left-color: rgba(255, 255, 255, 0.2);
 }
-tbody{
-   border:1px solid #ddd;
+tbody {
+  border: 1px solid #ddd;
 }
 
 .price-header span {
   display: block;
   font-size: 14px;
 }
-.price-header .span_1{
+.price-header .span_1 {
   display: inline;
-font-size: 20px;
+  font-size: 20px;
 }
 
 /* --- Table Body (tbody) --- */
@@ -313,10 +311,8 @@ font-size: 20px;
   color: var(--text-light);
 }
 
-
-
 /* ==================================================
-   07. FAQ SECTION
+   07. FAQ SECTION (CORRECTED & IMPROVED)
    ================================================== */
 .faq-section {
   padding: 100px 0;
@@ -357,40 +353,55 @@ font-size: 20px;
 .accordion-item {
   border-bottom: 1px solid #e8e8e8;
 }
+
 .accordion-toggle {
   display: none;
 }
+
 .accordion-title {
+
   display: block;
   padding: 20px;
   font-weight: 600;
   color: var(--text-dark);
   cursor: pointer;
   position: relative;
+  user-select: none;
 }
+
 .accordion-title::after {
-  content: "\f078"; /* fa-chevron-down */
+  content: "\f078"; 
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
-  right: 20px;
+  left: 0px;
   top: 50%;
   transform: translateY(-50%);
-  transition: transform 0.3s;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.accordion-item.open .accordion-title::after,
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 20px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  transition: 
+    max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease-out,
+    padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .accordion-toggle:checked + .accordion-title::after {
   transform: translateY(-50%) rotate(180deg);
 }
-.accordion-content {
-  padding: 0 20px 20px 20px;
-  display: none;
-  line-height: 1.7;
-  color: var(--text-muted);
-}
-.accordion-item.open .accordion-content,
+
 .accordion-toggle:checked ~ .accordion-content {
-  display: block;
+  max-height: 500px; 
+  opacity: 1;
+  padding: 0 20px 20px 20px;
 }
 
 /* ==================================================
@@ -407,7 +418,7 @@ font-size: 20px;
   .faq-content {
     flex-direction: column;
   }
-  .btn-dedicated{
+  .btn-dedicated {
     padding: 8px 18px;
   }
 }
@@ -422,7 +433,7 @@ font-size: 20px;
   .features-grid {
     grid-template-columns: 1fr;
   }
-  .btn-dedicated{
+  .btn-dedicated {
     padding: 6px 15px;
   }
 }
