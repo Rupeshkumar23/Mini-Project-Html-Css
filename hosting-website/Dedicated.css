@@ -316,40 +316,6 @@ font-size: 20px;
 
 
 /* ==================================================
-   06. PURCHASE CTA
-   ================================================== */
-.purchase-cta-section {
-  padding: 80px 0;
-  background: linear-gradient(
-      to right,
-      rgba(36, 17, 106, 0.9),
-      rgba(51, 134, 167, 0.9)
-    ),
-    url("images/globe-bg.png") center/cover no-repeat;
-  text-align: center;
-  color: var(--text-light);
-}
-.purchase-cta-section h2 {
-  color: var(--text-light);
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-.purchase-cta-section p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 1.7;
-  opacity: 0.9;
-}
-.purchase-cta-section .btn-purchase {
-  background-color: var(--section-bg);
-  border: 2px solid var(--section-bg);
-}
-.purchase-cta-section .btn-purchase:hover {
-  background-color: transparent;
-  color: var(--text-light);
-}
-
-/* ==================================================
    07. FAQ SECTION
    ================================================== */
 .faq-section {
