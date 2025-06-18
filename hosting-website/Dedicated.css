@@ -219,7 +219,7 @@
 /* --- Table Borders --- */
 .dedicated-pricing-table tbody th,
 .dedicated-pricing-table tbody td {
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
   color: var(--text-muted);
 }
 
@@ -231,6 +231,10 @@
     border-left: 1px solid #eee;
 }
 
+.section-header h2{
+  font-weight: bold;
+  color: #333333;
+}
 
 /* --- Table Header (thead) --- */
 .feature-header {
@@ -257,7 +261,7 @@
   background-color: #1D1465;
   color: var(--text-light);
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   border-left-color: rgba(255, 255, 255, 0.2);
 }
 tbody{
@@ -267,8 +271,10 @@ tbody{
 .price-header span {
   display: block;
   font-size: 14px;
-  font-weight: 400;
-  margin-top: -5px;
+}
+.price-header .span_1{
+  display: inline;
+font-size: 20px;
 }
 
 /* --- Table Body (tbody) --- */
