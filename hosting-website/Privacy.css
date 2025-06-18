@@ -19,14 +19,19 @@
 
 /* --- Privacy Content Section --- */
 .privacy-content-section {
-  padding: 100px 0;
+  padding: 100px 0px;
   background-color: var(--section-bg);
+  
 }
 
 .policy-item {
-  background-color: #f8f7fd; 
-  padding: 40px;
+  padding: 100px 250px;
   margin-bottom: 30px;
+
+}
+.policy-item:nth-of-type(even){
+    background-color: #F8F7FD; 
+   
 }
 
 .policy-item:last-child {
@@ -48,7 +53,11 @@
 }
 
 /* --- Responsive Styles for Privacy Page --- */
-
+@media (max-width: 1200px) {
+  .policy-item {
+    padding: 30px 50px;
+  }
+}
 @media (max-width: 768px) {
   .privacy-content-section {
     padding: 60px 0;
