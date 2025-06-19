@@ -204,7 +204,6 @@ background-color: transparent!important;
 }
 .faq-content {
   display: flex;
-  align-items: center;
   gap: 100px;
   margin-top: 50px;
 }

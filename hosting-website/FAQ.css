@@ -1,0 +1,139 @@
+/* ==================================================
+   FAQ PAGE STYLES
+   ================================================== */
+
+/* ======= 01. FAQ PAGE HEADER ======= */
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  padding: 220px 0 50px 0;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-light);
+}
+
+.faq-p {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0; 
+  margin-bottom: 20px; 
+  height: auto;
+  background-color: transparent;
+}
+
+.faq-p h3 {
+  display: inline-block; 
+  padding-bottom: 10px; 
+  margin-bottom: -2px; 
+  border-bottom: 1px solid #333; 
+  font-size: 20px; 
+  font-weight: 600;
+  width: 20%;
+  background-color: transparent;
+}
+
+
+/* ======= FAQ CONTACT SECTION ======= */
+.faq-contact-section {
+  padding: 100px 0;
+  background-color: #f7f6fd;
+}
+.faq-contact-section .section-header h2,
+.faq-contact-section .section-header p {
+  color: var(--text-dark);
+}
+
+.faq-contact-form {
+  max-width: 800px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-contact-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.faq-contact-form input,
+.faq-contact-form textarea {
+  width: 100%;
+  padding: 18px 25px;
+  border: 1px solid #e9e6f6;
+  background-color: var(--section-bg);
+  font-family: var(--font-family);
+  font-size: 15px;
+  color: var(--input-text);
+  outline-color: var(--theme-purple);
+}
+
+.faq-contact-form input::placeholder,
+.faq-contact-form textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+.faq-contact-form .btn-s {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  border: none;
+  align-self: center;
+  padding: 15px 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faq-contact-form .btn:hover {
+  background-color: var(--theme-purple);
+  color: var(--text-light);
+}
+
+/* =======  RESPONSIVE STYLES ======= */
+@media (max-width: 992px) {
+  .faq-header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .faq-header-content {
+    order: 2;
+  }
+  .faq-header-image {
+    order: 1;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .faq-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-page-header {
+    padding: 60px 0;
+  }
+  .faq-header-content h1 {
+    font-size: 36px;
+  }
+  .faq-accordion-section,
+  .faq-contact-section {
+    padding: 60px 0;
+  }
+  .faq-contact-form .form-row {
+    flex-direction: column;
+  }
+  .faq-list summary::before {
+    display: none; 
+  }
+  .faq-list summary {
+    padding-left: 0;
+  }
+}
