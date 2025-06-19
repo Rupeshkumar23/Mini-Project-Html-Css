@@ -1308,8 +1308,8 @@ img {
   .widget-title {
     text-align: center;
   }
-  .widget-title, p{
-    text-align: center;
+  .news_p{
+    text-align: center; 
   }
   .widget-title::after {
     left: 50%;
@@ -1368,6 +1368,7 @@ img {
   .hero-container {
     flex-direction: column;
     text-align: center;
+    padding: 40px 0;
   }
   .hero-content {
     order: 2;
