@@ -302,6 +302,15 @@ background-color: transparent!important;
   .btn-dedicated {
     padding: 8px 18px;
   }
+  .feature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-card p{
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {

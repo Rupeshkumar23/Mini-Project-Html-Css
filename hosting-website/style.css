@@ -1300,6 +1300,21 @@ img {
 /* --- Laptops & Medium Devices (max-width: 992px) --- */
 @media (max-width: 992px) {
   /* Header & Nav */
+   .newsletter-form {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .widget-title {
+    text-align: center;
+  }
+  .widget-title, p{
+    text-align: center;
+  }
+  .widget-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .main-header .container {
     flex-wrap: wrap;
   }
