@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Page-Specific Stylesheet -->
     <link rel="stylesheet" href="Dedicated.css" />
+    <link rel="stylesheet" href="./Testimonials.css" />
   </head>
   <body>
     <!-- ======= HEADER - START (Reused from index.html) ======= -->
@@ -94,22 +95,26 @@
     <!-- ======= HEADER - END ======= -->
 
     <main>
-      <!-- ======= DEDICATED HERO SECTION - START ======= -->
-      <section class="dedicated-hero-section">
+ <!-- ======= HERO SECTION - START ======= -->
+      <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-content">
-            <h1>DEDICATED HOSTING</h1>
+        <h1>DEDICATED HOSTING</h1>
             <p>
               Always explain to you how all this mistaken denouncing pleasure
               and praising pain <span class="price">$99.99</span> only.
             </p>
+    
           </div>
           <div class="hero-image">
-            <img src="images/banner-server 2.png" alt="Isometric server" />
+            <img
+              src="images/banner-server 1.png"
+              alt="Isometric server racks"
+            />
           </div>
         </div>
       </section>
-      <!-- ======= DEDICATED HERO SECTION - END ======= -->
+      <!-- ======= HERO SECTION - END ======= -->
 
       <!-- ======= SHARED FEATURES SECTION - START ======= -->
       <section class="shared-features-section">
@@ -124,7 +129,7 @@
           <div class="features-grid">
             <div class="feature-card">
               <div class="feature-icon">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <img src="./images/free-update.png" alt="">
               </div>
               <h3>Free Update</h3>
               <p>
@@ -134,7 +139,7 @@
             </div>
             <div class="feature-card">
               <div class="feature-icon">
-                <i class="fa-solid fa-envelope-open-text"></i>
+                 <img src="./images/email-transfer.png" alt="">
               </div>
               <h3>Email Transfer</h3>
               <p>
@@ -143,7 +148,7 @@
               </p>
             </div>
             <div class="feature-card">
-              <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+              <div class="feature-icon">  <img src="./images/more-secured.png" alt=""></div>
               <h3>More Secured</h3>
               <p>
                 But I must explain to you how this mistaken idea of denouncin
@@ -152,7 +157,7 @@
             </div>
             <div class="feature-card">
               <div class="feature-icon">
-                <i class="fa-solid fa-chalkboard-user"></i>
+                <img src="./images/c-pannel.png" alt="">
               </div>
               <h3>cPanel Included</h3>
               <p>
@@ -166,63 +171,68 @@
       <!-- ======= SHARED FEATURES SECTION - END ======= -->
 
       <!-- ======= REGULAR PRICING SECTION - START ======= -->
-      <section class="pricing-area regular-pricing-dedicated">
+      <section class="pricing-area">
         <div class="container">
+          <!-- Section Title -->
           <div class="section-title">
-            <h2>REGULER PRICING PLAN</h2>
+            <h2>REGULAR PRICING PLAN</h2>
             <p>
               Norem tosum dolor sitsim ametam gnsing elit per sed do eiusmod
-              teimpor sittem.
+              teimpor sittem elit inuning ut sed sittem do eiusmod.
             </p>
           </div>
+
+          <!-- Pricing Grid -->
           <div class="pricing-grid">
-            <div class="pricing-item">
-              <div class="pricing-header-dedicated">
-                <i class="fas fa-network-wired"></i>
-                <h3>START UP</h3>
-              </div>
-              <div class="pricing-body-dedicated">
-                <div class="price"><span>$39.99</span>/ Monthly</div>
-                <ul>
+            <!-- Single Price: Start Up -->
+            <div class="pricing-item pricing-item-startup">
+              <div class="pricing-header"></div>
+              <div class="pricing-body">
+                <div class="pricing-price"><span>$39.99</span>/Monthly</div>
+                <ul class="pricing-features">
+                  <div class="hr_top"></div>
                   <li>10 GB Ram</li>
                   <li>7/24 Suport</li>
                   <li>50 GB SSD Storage</li>
                   <li>Montly Backup</li>
                   <li>Unlimited Bandwidth</li>
+                  <div class="hr_bottom"></div>
                 </ul>
                 <a href="#" class="pricing-btn">Choose Plan</a>
               </div>
             </div>
-            <div class="pricing-item active">
-              <div class="pricing-header-dedicated">
-                <i class="fas fa-server"></i>
-                <h3>PREMIUM</h3>
-              </div>
-              <div class="pricing-body-dedicated">
-                <div class="price"><span>$59.99</span>/ Monthly</div>
-                <ul>
+
+            <!-- Single Price: Premium (Featured) -->
+            <div class="pricing-item  pricing-item-premium">
+              <div class="pricing-header"></div>
+              <div class="pricing-body">
+                <div class="pricing-price"><span>$59.99</span>/Monthly</div>
+                <ul class="pricing-features">
+                  <div class="hr_top"></div>
                   <li>10 GB Ram</li>
                   <li>7/24 Suport</li>
                   <li>50 GB SSD Storage</li>
                   <li>Montly Backup</li>
                   <li>Unlimited Bandwidth</li>
+                  <div class="hr_bottom"></div>
                 </ul>
                 <a href="#" class="pricing-btn">Choose Plan</a>
               </div>
             </div>
-            <div class="pricing-item">
-              <div class="pricing-header-dedicated">
-                <i class="far fa-gem"></i>
-                <h3>DIAMOND</h3>
-              </div>
-              <div class="pricing-body-dedicated">
-                <div class="price"><span>$89.99</span>/ Yearly</div>
-                <ul>
+
+            <!-- Single Price: Diamond -->
+            <div class="pricing-item pricing-item-diamond">
+              <div class="pricing-header"></div>
+              <div class="pricing-body">
+                <div class="pricing-price"><span>$89.99</span>/Yearly</div>
+                <ul class="pricing-features">
+                  <div class="hr_top"></div>
                   <li>10 GB Ram</li>
                   <li>7/24 Suport</li>
                   <li>50 GB SSD Storage</li>
                   <li>Montly Backup</li>
                   <li>Unlimited Bandwidth</li>
+                  <div class="hr_bottom"></div>
                 </ul>
                 <a href="#" class="pricing-btn">Choose Plan</a>
               </div>
@@ -449,8 +459,7 @@
   
 
       <!-- ======= TESTIMONIALS SECTION - START (Reused from index.html) ======= -->
-      <section class="testimonials-section">
-        <div class="container">
+              <div class="section-bg">
           <div class="section-header">
             <h2>WHAT OUR CLIENTS SAY</h2>
             <p>
@@ -458,35 +467,31 @@
               teimpor sittem elit inuning ut sed sittem do eiusmod.
             </p>
           </div>
-          <div class="testimonials-wrapper">
+          <div class="testimonial-row centered">
             <button class="testimonial-nav prev">
-              <i class="fas fa-arrow-left"></i>
+             | <i class="fas fa-arrow-left"></i>
             </button>
-            <div class="testimonial-card">
-              <div class="quote-icon">
-                <img src="images/double-qoutes.png" alt="Quote Icon" />
+            <div class="testimonial-card-v2 single">
+              <div class="quote-icon-large">
+                <img src="images/double-qoutes.png" alt="Large Quote Icon" />
               </div>
-              <p class="quote">
+              <p class="quote centered">
                 "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam eaque ipsa
-                ullam corporis susc"
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore"
               </p>
-              <div class="testimonial-footer">
-                <div class="author-info">
-                  <img src="images/man-3.png" alt="Dennis N. Vang" />
-                  <div class="author-details">
-                    <h4>Dennis N. Vang</h4>
-                    <span>Web Designer</span>
-                  </div>
+              <div class="author-info centered">
+                <img src="images/man-3.png" alt="Dennis N. Vang" />
+                <div class="author-details">
+                  <h4>Dennis N. Vang</h4>
+                  <span>Web Designer</span>
                 </div>
               </div>
             </div>
             <button class="testimonial-nav next">
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right"></i>|
             </button>
-          </div>
-        </div>
-      </section>
+          </div></div>
       <!-- ======= TESTIMONIALS SECTION - END ======= -->
 
       <!-- ======= CLIENTS SECTION - START (Reused from index.html) ======= -->

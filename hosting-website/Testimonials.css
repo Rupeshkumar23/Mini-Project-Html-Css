@@ -16,17 +16,7 @@
   position: relative;
   color: var(--text-light);
 }
-/* ======= 01. TESTIMONIAL HERO SECTION ======= */
-.testimonial-hero {
-  background: linear-gradient(
-    to right,
-    var(--hero-bg-start) 40%,
-    var(--hero-bg-end) 100%
-  );
-  padding: 80px 0;
-  overflow: hidden;
-  position: relative;
-}
+
 
 /* ======= 01. TESTIMONIALS DISPLAY SECTION ======= */
 .testimonials-display {
@@ -92,6 +82,9 @@
   font-size: 18px;
   margin: 0 0 4px;
 }
+.author-info img{
+  border: 3px solid white;
+}
 .author-details span {
   font-size: 14px;
   color: var(--text-quaternary);
@@ -116,9 +109,8 @@ hr {
   /* padding: 60px 50px; */
 }
 .quote-icon-large {
-  width: 90px;
+  width: 100%;
   margin: 0 auto 20px;
-  opacity: 0.8;
 }
 .testimonial-card-v2 p.quote.centered {
   font-size: 20px;
@@ -128,6 +120,9 @@ hr {
 }
 .author-info.centered {
   justify-content: center;
+}
+.testimonial-card-v3 img{
+border: 3px solid white;
 }
 
 /* Card Style 3 (Three-column layout) */
