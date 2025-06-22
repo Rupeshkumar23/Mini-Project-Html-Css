@@ -1,0 +1,434 @@
+/* ==================================================
+   ABOUT.CSS
+   - Styles specific to the About Us page
+   - Meant to be used alongside the main style.css
+   ================================================== */
+
+/* ==================================================
+   01. ABOUT HERO SECTION
+   ================================================== */
+.about-hero-section {
+  padding: 180px 0 120px 0;
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  color: var(--text-light);
+  overflow: hidden;
+}
+.about-hero-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.about-hero-content {
+  flex: 1;
+}
+.about-hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+.about-hero-content p {
+  font-size: 18px;
+  max-width: 500px;
+}
+.about-hero-content .price {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.about-hero-image {
+  flex: 1;
+  text-align: right;
+}
+.about-hero-image img {
+  max-width: 550px;
+}
+
+/* ==================================================
+   02. WELCOME SECTION
+   ================================================== */
+.welcome-section {
+  padding: 100px 0;
+}
+.welcome-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+.welcome-text {
+  flex: 1;
+  max-width: 50%;
+  color: var(--text-muted);
+}
+.welcome-text p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+.watch-video-link {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.watch-video-link:hover {
+  color: var(--primary-color);
+}
+.watch-video-link i {
+  color: var(--primary-color);
+  margin-left: 8px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.welcome-image {
+  flex: 1;
+  text-align: center;
+}
+.welcome-image img {
+  max-width: 500px;
+}
+.section-bg{
+  background: #F8F7FD!important;
+  box-shadow: none!important;
+}
+.single{
+  background: #F8F7FD!important;
+}
+.h2_C{
+  padding-top: 70px;
+}
+/* ==================================================
+   03. VIDEO CTA SECTION
+   ================================================== */
+.video-cta-section {
+  background: url("images/business-man-group-work-computer.jpg") no-repeat center center/cover;
+  position: relative;
+  padding: 180px 0;
+  text-align: center;
+  color: var(--text-light);
+}
+.video-cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+.video-cta-section .container {
+  position: relative;
+  z-index: 2;
+}
+.video-cta-section .play-button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: var(--text-light);
+  color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 80px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.video-cta-section .play-button:hover {
+  transform: scale(1.1);
+  background-color: var(--light-teal);
+  color: var(--text-light);
+}
+.video-cta-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+.video-cta-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ==================================================
+   04. WHY CHOOSE US (ABOUT) SECTION
+   ================================================== */
+.why-choose-about-section {
+  padding: 100px 0;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+.feature-item {
+  text-align: center;
+  padding: 30px;
+}
+.feature-item img {
+  margin-bottom: 25px;
+}
+.feature-item h3 {
+  font-size: 22px;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+.feature-item p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ==================================================
+   05. TEAM SECTION (MODIFIED)
+   ================================================== */
+.team-section {
+  padding: 100px 0;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.team-member {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.team-member img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.team-member:hover img {
+  transform: scale(1.1);
+}
+.member-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Black background with 0.5 opacity as requested */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+/* Show overlay on hover */
+.team-member:hover .member-overlay {
+  opacity: 1;
+}
+.member-overlay h4 {
+  color: var(--text-light);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+.member-overlay span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.member-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.member-social a {
+  color: var(--text-light);
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.member-social a:hover {
+  color: var(--light-teal);
+  transform: translateY(-3px);
+}
+
+
+/* ==================================================
+   06. DOMAIN CTA SECTION
+   ================================================== */
+.domain-cta-section {
+  padding: 80px 0;
+  background: linear-gradient(
+    to right,
+    var(--hero-bg-start) 30%,
+    var(--hero-bg-end)
+  );
+  color: var(--text-light);
+  overflow: hidden;
+}
+.domain-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+}
+.domain-cta-content {
+  flex-basis: 55%;
+  z-index: 2;
+}
+.domain-cta-content h2 {
+  color: var(--text-light);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.domain-cta-content p {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+.btn.btn-contact {
+  background-color: var(--text-light);
+  color: var(--primary-color);
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn.btn-contact:hover {
+  background-color: transparent;
+  color: var(--text-light);
+  outline: 2px solid var(--text-light);
+}
+.domain-cta-images {
+  flex: 1;
+  position: relative;
+  min-height: 150px;
+}
+.cta-globe {
+  position: absolute;
+  left: 0;
+  bottom: -110px;
+  width: 250px;
+  opacity: 0.15;
+}
+.cta-paper-plane {
+  position: absolute;
+  right: -100px;
+  top: -80px;
+  width: 250px;
+  opacity: 0.9;
+}
+
+/* ==================================================
+   07. TESTIMONIALS SECTION (Adjustments for About Page)
+   ================================================== */
+.testimonials-section .testimonial-nav.prev {
+  left: 10%;
+}
+.testimonials-section .testimonial-nav.next {
+  right: 10%;
+}
+.testimonials-section .testimonials-wrapper {
+  justify-content: center;
+  gap: 20px;
+}
+.testimonials-section .testimonial-card {
+  max-width: 600px;
+}
+
+/* ==================================================
+   08. RESPONSIVE DESIGN
+   ================================================== */
+
+/* Laptops & Medium Devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .about-hero-section {
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+  .about-hero-container {
+    flex-direction: column;
+  }
+  .about-hero-content {
+    order: 2;
+  }
+  .about-hero-image {
+    order: 1;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .welcome-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .welcome-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .features-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .domain-cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .domain-cta-images {
+    display: none;
+  }
+  .testimonials-section .testimonial-nav {
+    display: none;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 60px 0;
+  }
+  .about-hero-content h1 {
+    font-size: 38px;
+  }
+  .about-hero-image img {
+    max-width: 80%;
+  }
+
+  .welcome-section,
+  .why-choose-about-section,
+  .team-section,
+  .domain-cta-section {
+    padding: 60px 0;
+  }
+
+  .video-cta-section {
+    padding: 80px 0;
+  }
+  .video-cta-section h2 {
+    font-size: 30px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .team-member {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .domain-cta-content h2 {
+    font-size: 28px;
+  }
+  .clients-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
