@@ -1,0 +1,162 @@
+.domain-search-section{
+  margin-top: 0px;
+  
+}
+.search-box{
+border: 1px solid #ddd;
+box-shadow: none;
+}
+/* ==================================================
+   ALTERNATIVE DOMAIN SECTION
+   ================================================== */
+.alternative-domain-section {
+  padding: 100px 0;
+  background-color: var(--section-bg-light);
+}
+
+.domain-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.domain-pricing-card {
+  background-color: var(--section-bg);
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.domain-pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.domain-pricing-card h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* .com */
+.domain-pricing-card .tld-com,
+.domain-pricing-card .tld-com ~ .price {
+  color: #FD9700;
+}
+.domain-pricing-card .tld-com ~ .register-btn:hover {
+  background-color: #FD9700;
+  color: #fff;
+}
+
+/* .net */
+.domain-pricing-card .tld-net,
+.domain-pricing-card .tld-net ~ .price {
+  color: #8E53E9;
+}
+.domain-pricing-card .tld-net ~ .register-btn:hover {
+  background-color: #8E53E9;
+  color: #fff;
+}
+
+/* .org */
+.domain-pricing-card .tld-org,
+.domain-pricing-card .tld-org ~ .price {
+  color: #DD4B31;
+}
+.domain-pricing-card .tld-org ~ .register-btn:hover {
+  background-color: #DD4B31;
+  color: #fff;
+}
+
+/* .biz */
+.domain-pricing-card .tld-biz,
+.domain-pricing-card .tld-biz ~ .price {
+  color: #26A9FE;
+}
+.domain-pricing-card .tld-biz ~ .register-btn:hover {
+  background-color: #26A9FE;
+  color: #fff;
+}
+
+/* .co */
+.domain-pricing-card .tld-co,
+.domain-pricing-card .tld-co ~ .price {
+  color: #49CC89;
+}
+.domain-pricing-card .tld-co ~ .register-btn:hover {
+  background-color: #49CC89;
+  color: #fff;
+}
+
+/* .edu */
+.domain-pricing-card .tld-edu,
+.domain-pricing-card .tld-edu ~ .price {
+  color: #4374E5;
+}
+.domain-pricing-card .tld-edu ~ .register-btn:hover {
+  background-color: #4374E5;
+  color: #fff;
+}
+
+/* .tel */
+.domain-pricing-card .tld-tel,
+.domain-pricing-card .tld-tel ~ .price {
+  color: #E6457B;
+}
+.domain-pricing-card .tld-tel ~ .register-btn:hover {
+  background-color: #E6457B;
+  color: #fff;
+}
+
+/* .us */
+.domain-pricing-card .tld-us,
+.domain-pricing-card .tld-us ~ .price {
+  color: #FF8F00;
+}
+.domain-pricing-card .tld-us ~ .register-btn:hover {
+  background-color: #FF8F00;
+  color: #fff;
+}
+
+/* .guru */
+.domain-pricing-card .tld-guru,
+.domain-pricing-card .tld-guru ~ .price {
+  color: #1DAC58;
+}
+.domain-pricing-card .tld-guru ~ .register-btn:hover {
+  background-color: #1DAC58;
+  color: #fff;
+}
+
+.domain-pricing-card p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.domain-pricing-card .price {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.domain-pricing-card .discount {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 10px 45px;
+  border: 1px solid var(--border-light);
+  color: var(--text-tertiary);
+  font-weight: 600;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
