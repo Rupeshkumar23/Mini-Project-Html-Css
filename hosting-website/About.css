@@ -48,23 +48,23 @@
 }
 
 /* ==================================================
-   02. WELCOME SECTION
+   02. WELCOME SECTION (CORRECTED)
    ================================================== */
 .welcome-section {
   padding: 100px 0;
 }
+/* Container for the two text columns */
 .welcome-content {
   display: flex;
-  align-items: center;
   gap: 60px;
   margin-top: 40px;
 }
-.welcome-text {
+/* A single text column */
+.welcome-text-column {
   flex: 1;
-  max-width: 50%;
   color: var(--text-muted);
 }
-.welcome-text p {
+.welcome-text-column p {
   margin-bottom: 25px;
   line-height: 1.7;
 }
@@ -83,12 +83,14 @@
   font-size: 20px;
   vertical-align: middle;
 }
+/* Container for the image, now below the text */
 .welcome-image {
-  flex: 1;
+  margin-top: 60px;
   text-align: center;
 }
 .welcome-image img {
-  max-width: 500px;
+  max-width: 100%;
+  width: 700px;
 }
 .section-bg{
   background: #F8F7FD!important;
@@ -97,9 +99,8 @@
 .single{
   background: #F8F7FD!important;
 }
-.h2_C{
-  padding-top: 70px;
-}
+
+
 /* ==================================================
    03. VIDEO CTA SECTION
    ================================================== */
@@ -361,12 +362,9 @@
   }
 
   .welcome-content {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .welcome-text {
-    max-width: 100%;
-    text-align: center;
+    flex-direction: column; /* Stacks the two text columns */
+    gap: 20px;
+    text-align: center; /* Centers the text inside the columns */
   }
 
   .features-grid,

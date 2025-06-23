@@ -1,0 +1,246 @@
+/* ======= STEPS SECTION ======= */
+.steps-section {
+  padding: 100px 0;
+  background-color: var(--section-bg-light);
+}
+
+.section-title-steps {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-steps h2 {
+  font-size: 36px;
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.step-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.step-card img {
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.step-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.step-card p {
+  color: var(--text-tertiary);
+  line-height: 1.7;
+}
+
+/* ======= AFFILIATE PRICING SECTION ======= */
+.affiliate-pricing-section {
+  padding: 100px 0;
+  background-color: #f8f7fd;
+}
+
+/* Flex container for the 2-column layout */
+.affiliate-pricing-section .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.affiliate-pricing-section .section-header {
+  flex: 0 0 300px; /* Gives the left column a fixed width */
+  margin-bottom: 0;
+}
+.prices-h2{
+    text-align: left;
+}
+
+.pricing-grid-affiliate {
+  flex: 1; /* Allows the pricing cards to take the remaining space */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 0;
+}
+
+
+.pricing-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-tertiary);
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.pricing-toggle span {
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  background-color: transparent !important;
+}
+.pricing-toggle .toggle-active {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-align: left;
+}
+
+.pricing-card {
+  border: 1px solid #e9e9e9;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.pricing-card::before,
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.3s ease;
+}
+
+
+.pricing-card::before {
+  top: 0;
+  left: 0;
+  border-top: 35px solid var(--primary-color);
+  border-right: 35px solid transparent;
+}
+
+
+.pricing-card::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 35px solid var(--primary-color);
+  border-left: 35px solid transparent;
+}
+
+.pricing-card:hover{
+  box-shadow: 0 15px 45px rgba(27, 18, 94, 0.1);
+  transform: translateY(-5px);
+}
+
+.pricing-card-header h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+.pricing-card .price {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+.pricing-card .price sup {
+  font-size: 24px;
+  font-weight: 600;
+  color:var(--text-dark);
+  top: -1em;
+}
+.pricing-card .price span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.pricing-card p {
+  color: var(--text-tertiary);
+  margin-bottom: 30px;
+  min-height: 70px;
+}
+.btn-choose-plan {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+ .btn-choose-plan:hover{
+     background-color: var(--primary-color);
+  color: #fff;
+ }
+.section-bg{
+  background: #F8F7FD!important;
+  box-shadow: none!important;
+}
+.single{
+  background: #F8F7FD!important;
+}
+
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 992px) {
+  .affiliate-pricing-section .container {
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+
+  .affiliate-pricing-section .section-header {
+    flex: none; 
+    text-align: center;
+    margin-bottom: 50px; 
+  }
+
+  .steps-grid,
+  .pricing-grid-affiliate {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-container {
+    flex-direction: column;
+  }
+  .faq-image {
+    margin-bottom: 40px;
+  }
+  .section-header-faq {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title-steps h2,
+  .section-header-faq h2 {
+    font-size: 32px;
+  }
+  .affiliate-hero-image img {
+    max-width: 80%;
+  }
+  .steps-section,
+  .affiliate-pricing-section,
+  .faq-section {
+    padding: 80px 0;
+  }
+}

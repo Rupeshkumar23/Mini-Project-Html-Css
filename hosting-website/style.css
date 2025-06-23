@@ -708,6 +708,9 @@ img {
   background-color: var(--section-bg);
   border-radius: 50%;
 }
+.h2_C{
+  padding-top: 70px;
+}
 
 /* ==================================================
    09. ABOUT & LOVE SERVICE SECTIONS
