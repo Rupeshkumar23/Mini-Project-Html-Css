@@ -288,46 +288,7 @@
   margin-top: auto;
 }
 
-.pagination {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.pagination ul {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.pagination .page-numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border: 1px solid var(--border-light);
-  transition: all 0.3s;
-  border-radius: 50%; /* Make page numbers circular */
-  font-size: 14px;
-  font-weight: 500;
-  color: #777;
-}
- .pagination .page-numbers.current,
-.pagination .page-numbers:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: #fff;
-}
-.pagination .page-numbers.current {
-  pointer-events: none;
-}
-.pagination .page-numbers.next {
-  width: auto;
-  padding: 0 15px;
-  border-radius: 4px; /* Make NEXT a rectangle */
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+
 
 /* ==================================================
   RESPONSIVE DESIGN

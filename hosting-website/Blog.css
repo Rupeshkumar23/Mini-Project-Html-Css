@@ -1,0 +1,133 @@
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  padding: 220px 0 50px 0;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-light);
+}
+
+/* ==================================================
+   BLOG GRID SECTION
+   ================================================== */
+.blog-grid-section {
+  padding: 100px 0;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.blog-post-item {
+  background: var(--section-bg);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-post-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+.post-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.post-thumbnail.is-video .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 50px;
+  background-color: rgba(216, 55, 43, 0.747);
+  color: var(--text-light);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+.post-thumbnail.is-video .play-button:hover {
+  background-color: #D8362B;
+}
+.post-content {
+  padding: 25px 30px 30px;
+}
+.post-content h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  min-height: 56px; /* 2 lines of text */
+}
+.post-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.post-meta i {
+  margin-right: 8px;
+  color: var(--text-quaternary);
+}
+.post-content p {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+
+/* ==================================================
+   08. RESPONSIVE DESIGN
+   ================================================== */
+
+/* --- Laptops & Medium Devices (max-width: 992px) --- */
+@media (max-width: 992px) {
+
+  /* Blog Page */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-hero-section .hero-image {
+      display: none;
+  }
+  .blog-hero-section .hero-content {
+      flex-basis: 100%;
+      text-align: center;
+  }
+  .blog-hero-section p {
+      margin: 0 auto;
+  }
+}
+
+/* --- Tablets (max-width: 768px) --- */
+@media (max-width: 768px) {
+
+  /* Blog Page */
+  .blog-hero-section {
+    padding: 60px 0;
+  }
+  .blog-hero-section h1 {
+    font-size: 36px;
+  }
+  .blog-grid-section {
+    padding: 80px 0;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .post-content h2 {
+    min-height: auto;
+  }
+
+  
+}
