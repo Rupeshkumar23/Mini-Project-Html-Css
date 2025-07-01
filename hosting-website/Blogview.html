@@ -21,7 +21,7 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./Blog.css" />
+    <link rel="stylesheet" href="./Blogview.css" />
   </head>
   <body>
     <!-- ======= HEADER - START (Same as index.html) ======= -->
@@ -97,7 +97,7 @@
       <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-content">
-         <h1>BLOG GRID VIEW</h1>
+         <h1>BLOG WITH LEFT SIDEBAR</h1>
             <p>
               Always explain to you how all this mistaken denouncing pleasure
               and praising pain <span class="price">$99.99</span> only.
@@ -114,151 +114,225 @@
       </section>
       <!-- ======= HERO SECTION - END ======= -->
 
-      <main>
-      <!-- ======= BLOG GRID SECTION - START ======= -->
-      <section class="blog-grid-section">
+    <main>
+  <!-- ======= BLOG AREA SECTION - START ======= -->
+      <section class="blog-area">
         <div class="container">
-          <div class="blog-grid">
-            <!-- Blog Post 1 -->
-           <a href="./Blogview.html"> <article class="blog-post-item">
-              <div class="post-thumbnail">
-                <img src="images/internet.png" alt="Team working in an office" />
+          <div class="blog-layout">
+            <!-- Left Sidebar -->
+            <aside class="blog-sidebar">
+              <!-- Search Widget -->
+              <div class="sidebar-widget">
+                <form class="search-widget-form">
+                  <input type="text" placeholder="Enter keyword here" />
+                  <button type="submit">
+                    <i class="fa-solid fa-search"></i>
+                  </button>
+                </form>
               </div>
-              <div class="post-content">
-                <h2>Making Distributed Product Teams Work More Efficiently Com.</h2>
-                <div class="post-meta">
-                  <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                  <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                </div>
-                <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-              </div>
-            </article></a>
 
-            <!-- Blog Post 2  -->
-            <article class="blog-post-item">
-              <div class="post-thumbnail is-video">
-                <img src="images/server-room.png" alt="Network connections" />
-                <a href="#" class="play-button"><i class="fa-solid fa-play"></i></a>
+              <!-- Category Widget -->
+              <div class="sidebar-widget">
+                <h3 class="widget-title-s">Category</h3>
+                <ul class="category-list">
+                  <li class="active-cat">
+                    <a href="#">VPS Hosting</a>
+                  </li>
+                  <li><a href="#">Cloud Hosting</a></li>
+                  <li><a href="#">Reseller Hosting</a></li>
+                  <li><a href="#">Shared Hosting</a></li>
+                  <li><a href="#">Web Hosting</a></li>
+                </ul>
               </div>
-              <div class="post-content">
-                <h2>User Experience Psychology And Performance Videos</h2>
-                <div class="post-meta">
-                  <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                  <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                </div>
-                <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-              </div>
-            </article>
 
-            <!-- Blog Post 3 -->
-            <article class="blog-post-item">
-              <div class="post-thumbnail">
-                <img src="images/rj45.png" alt="Server and connected computers" />
+              <!-- Recent News Widget -->
+              <div class="sidebar-widget">
+                <h3 class="widget-title-s">Recent News</h3>
+                <ul class="recent-news-list">
+                  <li>
+                    <div class="recent-news-thumb">
+                      <img
+                        src="images/laptop.png"
+                        alt="News thumbnail"
+                      />
+                    </div>
+                    <div class="recent-news-content">
+                      <a href="#"
+                        >Building Diverse Design Teams Innovation.</a
+                      >
+                      <span>25 Aug 2018</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="recent-news-thumb">
+                      <img
+                        src="images/desktop.png"
+                        alt="News thumbnail"
+                      />
+                    </div>
+                    <div class="recent-news-content">
+                      <a href="#"
+                        >Managing SVG Interaction With Events Property.</a
+                      >
+                      <span>25 Aug 2018</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="recent-news-thumb">
+                      <img
+                        src="images/server-7.png"
+                        alt="News thumbnail"
+                      />
+                    </div>
+                    <div class="recent-news-content">
+                      <a href="#"
+                        >Smashing Bringing Personality Back To The Web.</a
+                      >
+                      <span>25 Aug 2018</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="post-content">
-                <h2>We Are Just Getting Started 1,000 Smashing Members</h2>
-                <div class="post-meta">
-                  <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                  <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                </div>
-                <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-              </div>
-            </article>
 
-            <!-- Blog Post 4  -->
-            <article class="blog-post-item">
-              <div class="post-thumbnail is-video">
-                  <img src="images/sever-to-laptop.png" alt="Child with a toy elephant" />
-                  <a href="#" class="play-button"><i class="fa-solid fa-play"></i></a>
+              <!-- Popular Tags Widget -->
+              <div class="sidebar-widget">
+                <h3 class="widget-title-s">Populer Tags</h3>
+                <div class="tag-cloud">
+                  <a href="#">Shop</a>
+                  <a href="#" class="active-tag">Ecommerce</a>
+                  <a href="#">Man</a>
+                  <a href="#">Women</a>
+                  <a href="#">Cloth</a>
+                  <a href="#">Jens</a>
+                  <a href="#">Shop</a>
+                  <a href="#">Ecommerce</a>
+                </div>
               </div>
-              <div class="post-content">
-                  <h2>Introduction To Animation And The iMessage App Store Hruggle</h2>
+            </aside>
+
+            <!-- Main Blog Posts -->
+            <div class="blog-posts-main">
+              <!-- Post 1 -->
+              <article class="blog-post-item">
+                <div class="post-thumbnail">
+                  <img
+                    src="images/internet.png"
+                    alt="Network servers"
+                  />
+                </div>
+                <div class="post-content">
+                  <h2 class="post-title">
+                    <a href="#"
+                      >Making Distributed Product Teams Work More Efficiently
+                      With monday com</a
+                    >
+                  </h2>
                   <div class="post-meta">
-                      <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                      <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
+                    <span><i class="fa-solid fa-user"></i> Michel Jhon</span>
+                    <span><i class="fa-solid fa-comments"></i> Comments(05)</span>
                   </div>
-                  <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-              </div>
-            </article>
+                  <p class="post-excerpt">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer of the truth the
+                    master-builder.
+                  </p>
+                </div>
+              </article>
 
-             <!-- Blog Post 5 (Audio) -->
-            <article class="blog-post-item">
-                <div class="post-thumbnail is-audio">
-                    <img src="images/holyday-session.png" alt="Audio player interface" />
+              <!-- Post 2 (Video) -->
+              <article class="blog-post-item">
+                <div class="post-thumbnail video-post">
+                  <img
+                    src="images/rj45.png"
+                    alt="Global network"
+                  />
+                  <a href="#" class="play-btn"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
                 </div>
                 <div class="post-content">
-                    <h2>Get Your Mobile Site Ready For The 2018 Holiday Season</h2>
-                    <div class="post-meta">
-                        <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                        <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                    </div>
-                    <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
+                  <h2 class="post-title">
+                    <a href="#"
+                      >Keeping Nodejs Fast Tools Techniques For Making Node.js
+                      Servers</a
+                    >
+                  </h2>
+                   <div class="post-meta">
+                    <span><i class="fa-solid fa-user"></i> Michel Jhon</span>
+                    <span><i class="fa-solid fa-comments"></i> Comments(05)</span>
+                  </div>
+                  <p class="post-excerpt">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer of the truth the
+                    master-builder.
+                  </p>
                 </div>
-            </article>
+              </article>
 
-            <!-- Blog Post 6 -->
-            <article class="blog-post-item">
+              <!-- Post 3 (Video) -->
+              <article class="blog-post-item">
+                <div class="post-thumbnail video-post">
+                  <img
+                    src="images/server-room.png"
+                    alt="Woman in an office"
+                  />
+                  <a href="#" class="play-btn"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                </div>
+                <div class="post-content">
+                  <h2 class="post-title">
+                    <a href="#"
+                      >Better Collaboration By Bringing Designers Into The Code
+                      Review Process</a
+                    >
+                  </h2>
+                   <div class="post-meta">
+                    <span><i class="fa-solid fa-user"></i> Michel Jhon</span>
+                    <span><i class="fa-solid fa-comments"></i> Comments(05)</span>
+                  </div>
+                  <p class="post-excerpt">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer of the truth the
+                    master-builder.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Post 4 (Audio/Visual) -->
+              <article class="blog-post-item">
                 <div class="post-thumbnail">
-                    <img src="images/laptop-security.png" alt="Laptop with a security lock graphic" />
+                  <img
+                    src="images/audio-visualizer.png"
+                    alt="Audio equalizer"
+                  />
                 </div>
                 <div class="post-content">
-                    <h2>Making Distributed Product Teams Work More Efficiently</h2>
-                    <div class="post-meta">
-                        <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                        <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                    </div>
-                    <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
+                  <h2 class="post-title">
+                    <a href="#">What Happens When You Create Flex Container?</a>
+                  </h2>
+                   <div class="post-meta">
+                    <span><i class="fa-solid fa-user"></i> Michel Jhon</span>
+                    <span><i class="fa-solid fa-comments"></i> Comments(05)</span>
+                  </div>
+                  <p class="post-excerpt">
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account of the system, and expound the
+                    actual teachings of the great explorer of the truth the
+                    master-builder.
+                  </p>
                 </div>
-            </article>
-            
-            <!-- Blog Post 7 -->
-            <article class="blog-post-item">
-              <div class="post-thumbnail">
-                <img src="images/rj45.png" alt="Ethernet cables plugged into a switch" />
-              </div>
-              <div class="post-content">
-                <h2>Onboarding Users Of Your Product From Trial To Payment</h2>
-                <div class="post-meta">
-                  <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                  <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                </div>
-                <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-              </div>
-            </article>
+              </article>
 
-            <!-- Blog Post 8 -->
-            <article class="blog-post-item">
-                <div class="post-thumbnail">
-                    <img src="images/server-room.png" alt="Hallway of server racks" />
-                </div>
-                <div class="post-content">
-                    <h2>Making Distributed Product Teams Work More Efficiently</h2>
-                    <div class="post-meta">
-                        <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                        <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                    </div>
-                    <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-                </div>
-            </article>
-
-            <!-- Blog Post 9 (Audio) -->
-            <article class="blog-post-item">
-                <div class="post-thumbnail is-audio">
-                    <img src="images/holyday-session.png" alt="Audio player interface" />
-                </div>
-                <div class="post-content">
-                    <h2>Get Your Mobile Site Ready For The 2018 Holiday Season</h2>
-                    <div class="post-meta">
-                        <span><i class="fa-regular fa-user"></i> Michel Jhon</span>
-                        <span><i class="fa-regular fa-heart"></i> Comments(05)</span>
-                    </div>
-                    <p>But I must explain to you how all tmistaken idea of denouncing pleasure.</p>
-                </div>
-            </article>
-          </div>
-
-          <!-- Pagination -->
-          <nav class="pagination">
+              <!-- Pagination -->
+             <nav class="pagination">
                 <ul>
                   <li><a class="page-numbers" href="#">1</a></li>
                   <li><span class="page-numbers current">2</span></li>
@@ -267,9 +341,11 @@
                   <li><a class="next page-numbers" href="#">NEXT</a></li>
                 </ul>
               </nav>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- ======= BLOG GRID SECTION - END ======= -->
+      <!-- ======= BLOG AREA SECTION - END ======= -->
     </main>
     <!-- ======= FOOTER SECTION - START (Same as index.html) ======= -->
     <footer class="site-footer-final">
