@@ -39,23 +39,7 @@
 .sidebar-widget:first-child{
     background:var(--section-bg-light);
 }
-.widget-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid var(--border-light);
-  position: relative;
-}
-.widget-title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 50px;
-  height: 2px;
-  background-color: var(--primary-color);
-}
+
 .search-widget-form {
   position: relative;
 }
