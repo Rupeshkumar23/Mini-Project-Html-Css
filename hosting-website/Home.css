@@ -1,0 +1,22 @@
+.main-header{
+  background:transparent;
+}
+.main-nav ul li a {
+  color: white;
+}
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--hero-bg-start) 45%,
+    var(--hero-bg-end)
+  );
+  padding: 220px 0 200px 0;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-light);
+}
+.domain-search-section{
+  margin-top: -200px;
+}
