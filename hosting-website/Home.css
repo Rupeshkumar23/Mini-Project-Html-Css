@@ -4,13 +4,16 @@
 .main-nav ul li a {
   color: white;
 }
+.brand-letter{
+  color: white;
+}
 .hero-section {
   background: linear-gradient(
     to bottom right,
     var(--hero-bg-start) 45%,
     var(--hero-bg-end)
   );
-  padding: 220px 0 200px 0;
+  padding: 220px 0 200px 0!important;
   background-size: cover;
   background-position: center bottom;
   overflow: hidden;
@@ -19,4 +22,20 @@
 }
 .domain-search-section{
   margin-top: -200px;
+}
+.fa-solid{
+  color: white;
+}
+@media (max-width: 992px) {
+    .main-nav ul li a {
+   color: var(--text-dark);
+  }
+}
+@media (max-width: 768px)  {
+  .main-nav ul li a {
+   color: var(--text-dark);
+  }
+  .fa-solid,.brand-letter{
+  color: var(--hero-bg-start);
+}
 }
