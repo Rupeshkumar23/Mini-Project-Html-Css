@@ -368,6 +368,65 @@ background-color: var(--section-bg-light);
 }
 /* ======= NEWSLETTER SIGNUP SECTION - END ======= */
 
+/* ======= FOOTER-SECTION - START ======= */
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-widget ul li {
+  margin-bottom: 15px;
+}
+
+.footer-widget ul li a {
+  color: #a9a8c0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+/* Quick Links special styling */
+.widget-quick-links .links-container {
+  display: flex;
+  gap: 30px;
+}
+
+/* Contact Us special styling */
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contact-list i {
+  color: #fff;
+  width: 20px;
+  text-align: center;
+}
+
+.footer-social-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-links a {
+  color: #a9a8c0;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-social-links a:hover {
+  color: var(--light-teal);
+}
+.footer-main-final {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* ======= FOOTER-SECTION - END ======= */
 /* ==================================================
                RESPONSIVE STYLES
 ================================================== */
@@ -469,4 +528,11 @@ background-color: var(--section-bg-light);
     margin-top: 15px;
     border-radius: 5px;
   }
+  .contact-list li{
+    justify-content: center;
+  }
+  .footer-social-links {
+    justify-content: center;
+  }
+  
 }
