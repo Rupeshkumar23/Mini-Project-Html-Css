@@ -1155,13 +1155,13 @@ img {
   padding-bottom: 15px;
 }
 .widget-title::after {
-  content: "";
+ content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, white 40%, #5d5d8e 40%);
 }
 .footer-widget-final ul li {
   margin-bottom: 15px;

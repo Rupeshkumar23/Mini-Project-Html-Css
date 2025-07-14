@@ -279,8 +279,9 @@ background-color: var(--section-bg-light);
 }
 /* ======= NEWSLETTER SIGNUP SECTION - START ======= */
 .newsletter-signup-section {
-  padding: 60px 0px;
-  background: linear-gradient(to  right, var(--hero-bg-start) 35%, var(--hero-bg-end) 100%);
+  margin-top: 100px;
+  padding: 60px 50px;
+  background: linear-gradient(to  right, var(--hero-bg-start) 55%, var(--hero-bg-end) 100%);
   color: #fff;
 }
 
@@ -387,6 +388,23 @@ background-color: var(--section-bg-light);
    .cta-content h2 {
     font-size: 28px;
   }
+   .newsletter-signup-wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+  .newsletter-signup-title h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .newsletter-signup-description {
+    flex-basis: 100%;
+    max-width: 100%;
+    order: 3; 
+  }
+  .newsletter-signup-form {
+    order: 4; 
+    margin-top: 20px;
+  }
   
 }
 
@@ -437,5 +455,18 @@ background-color: var(--section-bg-light);
   .cta-content p {
     margin-left: auto;
     margin-right: auto;
+  }
+  .newsletter-signup-form form {
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .newsletter-signup-form input {
+    border-radius: 5px;
+    text-align: center;
+  }
+  .newsletter-signup-form button {
+    margin-top: 15px;
+    border-radius: 5px;
   }
 }
