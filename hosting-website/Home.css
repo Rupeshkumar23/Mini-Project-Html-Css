@@ -26,6 +26,12 @@
 .fa-solid{
   color: white;
 }
+.about-content h2{
+  text-transform: lowercase;
+}
+.about-content h2::first-letter{
+  text-transform: uppercase;
+}
 @media (max-width: 992px) {
     .main-nav ul li a {
    color: var(--text-dark);
