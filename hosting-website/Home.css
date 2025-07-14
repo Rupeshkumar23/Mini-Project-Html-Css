@@ -32,18 +32,410 @@
 .about-content h2::first-letter{
   text-transform: uppercase;
 }
+
+/* ======= PRICING PLAN SECTION - START ======= */
+.pricing-area{
+  margin-top: 100px;
+}
+ .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a2e; 
+  margin-bottom: 15px;
+}
+
+ .section-header p {
+  font-size: 16px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.pricing-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+  max-width: 350px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.plan-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--primary-dark);
+  margin-bottom: 25px;
+}
+.plan-price sup{
+  color: var(--text-tertiary);
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.price-decimal {
+  font-size: 42px;
+}
+
+.price-period {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-left: 5px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.plan-features li {
+  color: #6c757d;
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+.btn-choose-plan {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  border: 2px solid  var(--primary-dark);
+  color:  var(--primary-dark);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color:  var(--primary-dark);
+  color: #fff;
+}
+
+
+.pricing-card:hover {
+  box-shadow: 0 10px 30px rgba(44, 35, 77, 0.2);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -16px;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: var(--primary-dark);
+  color: #fff;
+  padding: 6px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* ======= PRICING PLAN SECTION - END ======= */
+
+/* ======= SERVICES PROVIDED SECTION - START ======= */
+.services-provide-section {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+  margin-top: 60px;
+}
+.service-item{
+  text-align: left;
+  margin-left: 60px;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.service-read-more {
+  color: var(--text-dark);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.service-read-more:hover {
+  color: var(--primary-dark)
+}
+
+/* ======= SERVICES PROVIDED SECTION - END ======= */
+/* ======= CTA SECTION - START ======= */
+.cta-section {
+  padding: 0; 
+  background: linear-gradient(to right,  var(--hero-bg-start) 25%,   var(--hero-bg-end) 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 280px;
+}
+
+.cta-image {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.cta-image img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.1); /* Slightly enlarge image to match design */
+}
+
+.cta-content {
+  flex-basis: 55%;
+  text-align: left;
+}
+
+.cta-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.cta-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 450px; /* Constrain width of paragraph */
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.btn-purchase {
+  display: inline-block;
+  background-color: #fff;
+  color: #2c234d;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-purchase:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+/* ======= CTA SECTION - END ======= */
+.client-area{
+  padding: 100px 0;
+background-color: var(--section-bg-light);
+}
+/* ======= NEWSLETTER SIGNUP SECTION - START ======= */
+.newsletter-signup-section {
+  padding: 60px 0px;
+  background: linear-gradient(to  right, var(--hero-bg-start) 35%, var(--hero-bg-end) 100%);
+  color: #fff;
+}
+
+.newsletter-signup-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.newsletter-signup-title {
+  flex-shrink: 0;
+}
+
+.newsletter-signup-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+/* The two-color underline */
+.newsletter-signup-title h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, white 40%, #5d5d8e 40%);
+}
+
+.newsletter-signup-description {
+  flex-grow: 1;
+  max-width: 250px;
+}
+
+.newsletter-signup-description p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.newsletter-signup-form {
+  flex-shrink: 0;
+}
+
+.newsletter-signup-form form {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.newsletter-signup-form input {
+  border: none;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  outline: none;
+}
+
+.newsletter-signup-form input::placeholder {
+  color: #888;
+}
+
+.newsletter-signup-form button {
+  border: none;
+  background-color: #40e0d0; /* Bright Turquoise */
+  color: #2c234d;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-signup-form button:hover {
+  background-color: #35c4b4;
+}
+/* ======= NEWSLETTER SIGNUP SECTION - END ======= */
+
+/* ==================================================
+               RESPONSIVE STYLES
+================================================== */
+
 @media (max-width: 992px) {
-    .main-nav ul li a {
+  .main-nav ul li a {
    color: var(--text-dark);
   }
+  .pricing-card.popular {
+    transform: translateY(0);
+  }
+  .pricing-shape-top, .pricing-shape-bottom {
+    display: none;
+  }
+   .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+   .cta-content h2 {
+    font-size: 28px;
+  }
+  
 }
+
 @media (max-width: 768px)  {
   .main-nav ul li a {
    color: var(--text-dark);
   }
   .fa-solid,.brand-letter{
-  color: var(--hero-bg-start);
-}
+    color: var(--hero-bg-start);
+  }
+  .pricing-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-card {
+    width: 90%;
+    max-width: 400px;
+  }
+  .pricing-card.popular {
+    order: -1; 
+    margin-bottom: 30px;
+  }
+   .services-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .service-item{
+  text-align: center;
+  margin-left: 0px;
 }
 
-
+  .services-provide-section {
+    padding: 80px 0;
+  }
+    .cta-section {
+    padding: 60px 0;
+  }
+  .cta-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-image {
+    margin-bottom: 30px;
+  }
+  .cta-content {
+    text-align: center;
+  }
+  .cta-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
