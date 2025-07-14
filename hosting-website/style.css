@@ -1131,6 +1131,7 @@ img {
 /* --- Footer Main --- */
 .footer-main-final {
   padding: 80px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-widgets-final {
   display: flex;
