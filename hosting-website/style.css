@@ -22,7 +22,7 @@
   /* -- Brand & Theme Colors -- */
   --primary-color: #1b125e;
   --primary-dark: #1d1465;
-  --secondary-color: #ef900e; /* Yellow/Orange accent */
+  --secondary-color: #ef900e;
   --theme-purple: #2c2377;
   --light-teal: #43e8e0;
   --button-hover-teal: #35c4bc;
@@ -225,6 +225,8 @@ img {
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  /* Added for positioning context for mobile nav */
+  position: relative;
 }
 .logo {
   display: flex;
@@ -287,13 +289,30 @@ img {
   display: none;
 }
 .menu-toggle {
-  display: none;
+  display: none; /* Hidden on desktop, shown in media query */
   font-size: 20px;
   cursor: pointer;
   z-index: 1001;
+  /* NEW: Prepare for icon animation */
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
 }
+.menu-toggle i {
+  /* NEW: Position icons for fade/rotate animation */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+}
+
 .menu-toggle .menu-icon-close {
-  display: none;
+  /* NEW: Hide close icon by default */
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 /* ==================================================
@@ -812,51 +831,6 @@ img {
 /* ==================================================
    10. CTA, SERVICES, TESTIMONIALS, CLIENTS
    ================================================== */
-/* --- CTA Section --- */
-.cta-section {
-  background: linear-gradient(
-    to right,
-    var(--hero-bg-start) 50%,
-    var(--hero-bg-end)
-  );
-  padding: 50px 0;
-}
-.cta-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.cta-text h2 {
-  color: var(--text-light);
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-}
-.cta-text p {
-  color: var(--text-light);
-  font-size: 18px;
-  margin: 0;
-}
-.btn-purchase {
-  display: inline-block;
-  background-color: var(--text-light);
-  color: var(--theme-purple);
-  padding: 14px 45px;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-.btn-purchase:hover {
-  background-color: transparent;
-  border-color: var(--text-light);
-  color: var(--text-light);
-}
-
 /* --- Services Section --- */
 .services-section {
   padding: 100px 0;
@@ -1030,7 +1004,7 @@ img {
     var(--hero-bg-end)
   );
   color: var(--text-light);
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .cta-section .container {
@@ -1343,6 +1317,7 @@ img {
 }
 
 /* --- Laptops & Medium Devices (max-width: 992px) --- */
+/* REWRITTEN FOR SMOOTH ANIMATION */
 @media (max-width: 992px) {
   /* Header & Nav */
    .newsletter-form {
@@ -1364,38 +1339,73 @@ img {
     flex-wrap: wrap;
   }
   .menu-toggle {
-    display: block;
+    display: block; /* Show hamburger icon */
   }
+
+  /* --- Animated Mobile Navigation --- */
   .main-nav {
-    display: none;
-    flex-basis: 100%;
-    margin-top: 15px;
-    order: 3;
+    /* Position for dropdown animation */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    /* Hide by default using animatable properties */
     background-color: var(--section-bg);
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Collapse to top */
+    transition: clip-path 0.4s ease-out, visibility 0.4s ease-out;
+    box-shadow: 0 10px 20px rgba(27, 18, 94, 0.1);
   }
+
   .menu-toggle-checkbox:checked + .main-nav {
-    display: block;
+    /* Show menu on toggle */
+    visibility: visible;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Expand to full height */
   }
+
+  /* --- Icon Transformation Animation --- */
   .menu-toggle-checkbox:checked ~ .header-actions .menu-toggle .menu-icon-open {
-    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg);
   }
-  .menu-toggle-checkbox:checked
-    ~ .header-actions
-    .menu-toggle
-    .menu-icon-close {
-    display: block;
+  .menu-toggle-checkbox:checked ~ .header-actions .menu-toggle .menu-icon-close {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
   }
+
+  /* Mobile Menu List Styling */
   .main-nav ul {
     flex-direction: column;
     gap: 0;
+    padding: 10px 0;
   }
+
+  /* Prepare list items for staggered animation */
   .main-nav ul li {
     text-align: center;
     border-bottom: 1px solid var(--border-light);
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
   .main-nav ul li:last-child {
     border: none;
   }
+
+  /* Staggered link animation when menu is opened */
+  .menu-toggle-checkbox:checked + .main-nav ul li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .menu-toggle-checkbox:checked + .main-nav ul li:nth-child(1) { transition-delay: 0.10s; }
+  .menu-toggle-checkbox:checked + .main-nav ul li:nth-child(2) { transition-delay: 0.15s; }
+  .menu-toggle-checkbox:checked + .main-nav ul li:nth-child(3) { transition-delay: 0.20s; }
+  .menu-toggle-checkbox:checked + .main-nav ul li:nth-child(4) { transition-delay: 0.25s; }
+  .menu-toggle-checkbox:checked + .main-nav ul li:nth-child(5) { transition-delay: 0.30s; }
+  .menu-toggle-checkbox:checked + .main-nav ul li:nth-child(6) { transition-delay: 0.35s; }
+
   .main-nav ul li a {
     display: block;
     padding: 15px;
@@ -1403,7 +1413,8 @@ img {
   .badge {
     position: static;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 10px;
+    vertical-align: middle;
   }
 
   /* Hero */
