@@ -225,7 +225,6 @@ img {
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  /* Added for positioning context for mobile nav */
   position: relative;
 }
 .logo {
@@ -289,11 +288,10 @@ img {
   display: none;
 }
 .menu-toggle {
-  display: none; /* Hidden on desktop, shown in media query */
+  display: none; 
   font-size: 20px;
   cursor: pointer;
   z-index: 1001;
-  /* NEW: Prepare for icon animation */
   position: relative;
   width: 24px;
   height: 24px;
@@ -301,7 +299,6 @@ img {
   background: transparent;
 }
 .menu-toggle i {
-  /* NEW: Position icons for fade/rotate animation */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -310,7 +307,6 @@ img {
 }
 
 .menu-toggle .menu-icon-close {
-  /* NEW: Hide close icon by default */
   opacity: 0;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
@@ -1317,9 +1313,7 @@ img {
 }
 
 /* --- Laptops & Medium Devices (max-width: 992px) --- */
-/* REWRITTEN FOR SMOOTH ANIMATION */
 @media (max-width: 992px) {
-  /* Header & Nav */
    .newsletter-form {
     flex-direction: column;
     max-width: 300px;
@@ -1339,19 +1333,17 @@ img {
     flex-wrap: wrap;
   }
   .menu-toggle {
-    display: block; /* Show hamburger icon */
+    display: block; 
   }
 
-  /* --- Animated Mobile Navigation --- */
   .main-nav {
-    /* Position for dropdown animation */
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     z-index: 1000;
     
-    /* Hide by default using animatable properties */
+  
     background-color: var(--section-bg);
     visibility: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Collapse to top */
@@ -1360,12 +1352,11 @@ img {
   }
 
   .menu-toggle-checkbox:checked + .main-nav {
-    /* Show menu on toggle */
     visibility: visible;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Expand to full height */
   }
 
-  /* --- Icon Transformation Animation --- */
+
   .menu-toggle-checkbox:checked ~ .header-actions .menu-toggle .menu-icon-open {
     opacity: 0;
     transform: translate(-50%, -50%) rotate(90deg);
@@ -1375,14 +1366,13 @@ img {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 
-  /* Mobile Menu List Styling */
   .main-nav ul {
     flex-direction: column;
     gap: 0;
     padding: 10px 0;
   }
 
-  /* Prepare list items for staggered animation */
+
   .main-nav ul li {
     text-align: center;
     border-bottom: 1px solid var(--border-light);
@@ -1394,7 +1384,7 @@ img {
     border: none;
   }
 
-  /* Staggered link animation when menu is opened */
+  
   .menu-toggle-checkbox:checked + .main-nav ul li {
     opacity: 1;
     transform: translateY(0);
@@ -1502,7 +1492,6 @@ img {
 
 /* --- Tablets (max-width: 768px) --- */
 @media (max-width: 768px) {
-  /* General Section Padding */
   .about-section,
   .services-section,
   .love-service-section,
