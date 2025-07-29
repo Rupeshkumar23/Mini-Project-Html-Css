@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BDevs Hosting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Home.css" />
+    <link rel="stylesheet" href="./Home1.css" />
+    <link rel="stylesheet" href="./About.css" />
+   
+  </head>
+  <body>
+    <!-- ======= HEADER - START ======= -->
+    <header class="site-header">
+      <div class="clouds">
+        <i class="fa-solid fa-cloud icon-cloud1"></i>
+        <i class="fa-solid fa-cloud icon-cloud2"></i>
+        <i class="fa-solid fa-cloud icon-cloud3"></i>
+      </div>
+      <!-- Top Bar -->
+      <div class="header-top container">
+        <div class="container">
+          <div class="contact-info">
+            <span><i class="fa-solid fa-phone"></i>+0123456789</span>
+            <span><i class="fa-solid fa-envelope"></i>support@gmail.com</span>
+          </div>
+          <div class="top-right-nav">
+            <a href="#"><i class="fa-regular fa-message"></i>Live Chat</a>
+            <a href="#"><i class="fa-solid fa-key"></i>Login / Register</a>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Navigation -->
+      <div class="main-header">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="images/logo.png" alt="BDevs Logo" /><span
+              class="brand-name"
+              ><b class="brand-letter">B</b>Devs</span
+            >
+          </a>
+
+          <!-- Hidden checkbox to control the menu state for mobile -->
+          <input
+            type="checkbox"
+            id="menu-toggle-checkbox"
+            class="menu-toggle-checkbox"
+          />
+
+          <!-- Main Navigation Menu -->
+          <nav class="main-nav">
+            <ul>
+              <li><a class="active-link" href="./index.html">Home</a></li>
+              <li>
+                <a href="./Privacy.html" class="services"
+                  >Services <span class="badge">New</span></a
+                >
+              </li>
+              <li><a href="./Affiliate.html">Pages</a></li>
+              <li><a href="./Domain.html">Blog</a></li>
+              <li><a href="./Testimonials.html">Features</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Header Actions (Search, Cart, Menu Toggle) -->
+          <div class="header-actions">
+            <a href="./error.html" class="icon-link"
+              ><i class="fa-solid fa-search"></i
+            ></a>
+            <a href="./Shop.html" class="icon-link"
+              ><i class="fa-solid fa-shopping-cart"></i
+            ></a>
+
+            <!-- Label for the checkbox to toggle menu on mobile -->
+            <label for="menu-toggle-checkbox" class="menu-toggle">
+              <i class="fa-solid fa-bars menu-icon-open"></i>
+              <i class="fa-solid fa-times menu-icon-close"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ======= HEADER - END ======= -->
+
+    <main>
+      <!-- ======= HERO SECTION - START ======= -->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>
+              FIND YOUR BEST <br />
+              DOMAIN FORM BDEVS
+            </h1>
+            <p>
+              Always explain to you how all this mistaken denouncing <br />
+              pleasure and praising pain <span class="price">$99.99</span> only.
+            </p>
+          </div>
+        </div>
+        <!-- Left Illustration: Server/Database -->
+        <img src="./images/data-cloud-1.png" alt="Server Illustration"
+          class="decorative-img illustration-left"
+        />
+
+        <!-- Right Illustration: Laptop -->
+        <img
+          src="./images/affiliate-laptop.png"
+          alt="Laptop Illustration"
+          class="decorative-img illustration-right"
+        />
+      </section>
+      <!-- ======= HERO SECTION - END ======= -->
+
+      <!-- ======= DOMAIN SEARCH SECTION - START ======= -->
+      <section class="domain-search-section">
+        <div class="container">
+          <div class="search-box">
+            <h2>Find Your Best Domain Name</h2>
+            <form class="search-form">
+              <input type="text" placeholder="Search domain name here" />
+              <div class="select-wrapper">
+                <select name="tld" class="tld-select">
+                  <option value="com">.com</option>
+                  <option value="net">.net</option>
+                  <option value="org">.org</option>
+                  <option value="biz">.biz</option>
+                  <option value="co">.co</option>
+                  <option value="edu">.edu</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-secondary">SEARCH</button>
+            </form>
+            <ul class="tld-prices">
+              <li class="tld-com"><span>.com</span> $4.99</li>
+              <li class="tld-net"><span>.net</span> $5.99</li>
+              <li class="tld-org"><span>.org</span> $6.99</li>
+              <li class="tld-biz"><span>.biz</span> $7.99</li>
+              <li class="tld-co"><span>.co</span> $7.99</li>
+              <li class="tld-edu"><span>.edu</span> $7.99</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+       <!-- ======= WHY CHOOSE US (ABOUT) - START ======= -->
+      <section class="why-choose-about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>WHY CHOOSE US</h2>
+            <p>
+              Norem tosum dolor sitam amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod teimpor sittem elit inuning.
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-item">
+              <img
+                src="images/database-security.png"
+                alt="Guaranteed Security Icon"
+              />
+              <h3>Guaranteed Security</h3>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncin pleasure and praising pain was.
+              </p>
+            </div>
+            <div class="feature-item">
+              <img
+                src="images/advance-technology.png"
+                alt="Advance Technology Icon"
+              />
+              <h3>Advance Technology</h3>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncin pleasure and praising pain was.
+              </p>
+            </div>
+            <div class="feature-item">
+              <img
+                src="images/boost-credibility.png"
+                alt="Boost Credibility Icon"
+              />
+              <h3>Boost Credibility</h3>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncin pleasure and praising pain was.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= WHY CHOOSE US (ABOUT) - END ======= -->
+       <!-- ======= HOSTING SERVICES SECTION - START ======= -->
+<section class="hosting-services-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>OUR HOSTING SERVICES</h2>
+      <p>Norem tosum dolor sittem ametamgcing elit per sed do eiusmod teimpor sittem elit inuning ut sed sittem do eiusmod.</p>
+    </div>
+    <div class="hosting-plans-grid">
+      <!-- Plan Card 1: Web Hosting -->
+      <div class="plan-card">
+        <img src="./images/web-hosting.png" alt="Web Hosting Icon" class="plan-icon">
+        <h3 class="plan-title">Web Hosting</h3>
+         <div class="plan-separator"></div>
+        <p class="plan-description">On the other hand we denowith righteous indignation and dislike men who are beguiled and</p>
+        <div class="plan-separator"></div>
+        <div class="plan-price"><sup>$</sup>39.99<span>/Monthly</span></div>
+         <div class="plan-separator"></div>
+        <a href="#" class="btn-choose-plan">Choose Plan</a>
+      </div>
+
+      <!-- Plan Card 2: Shared Hosting (Featured) -->
+      <div class="plan-card ">
+        <img src="./images/shared-hosting.png" alt="Shared Hosting Icon" class="plan-icon">
+        <h3 class="plan-title">Shared Hosting</h3>
+         <div class="plan-separator"></div>
+        <p class="plan-description">On the other hand we denowith righteous indignation and dislike men who are beguiled and</p>
+        <div class="plan-separator"></div>
+        <div class="plan-price"><sup>$</sup>29.99<span>/Monthly</span></div>
+         <div class="plan-separator"></div>
+        <a href="#" class="btn-choose-plan">Choose Plan</a>
+      </div>
+
+      <!-- Plan Card 3: Reseller Hosting -->
+      <div class="plan-card">
+        <img src="./images/reseller-hosting.png" alt="Reseller Hosting Icon" class="plan-icon">
+        <h3 class="plan-title">Reseller Hosting</h3>
+         <div class="plan-separator"></div>
+        <p class="plan-description">On the other hand we denowith righteous indignation and dislike men who are beguiled and</p>
+        <div class="plan-separator"></div>
+        <div class="plan-price"><sup>$</sup>49.99<span>/Monthly</span></div>
+         <div class="plan-separator"></div>
+        <a href="#" class="btn-choose-plan">Choose Plan</a>
+      </div>
+
+      <!-- Plan Card 4: Dedicated Hosting -->
+      <div class="plan-card">
+        <img src="./images/dedicated-hosting.png" alt="Dedicated Hosting Icon" class="plan-icon">
+        <h3 class="plan-title">Dedicated Hosting</h3>
+         <div class="plan-separator"></div>
+        <p class="plan-description">On the other hand we denowith righteous indignation and dislike men who are beguiled and</p>
+        <div class="plan-separator"></div>
+        <div class="plan-price"><sup>$</sup>49.99<span>/Monthly</span></div>
+         <div class="plan-separator"></div>
+        <a href="#" class="btn-choose-plan">Choose Plan</a>
+      </div>
+
+      <!-- Plan Card 5: VPS Hosting -->
+      <div class="plan-card">
+        <img src="./images/vps-hosting.png" alt="VPS Hosting Icon" class="plan-icon">
+        <h3 class="plan-title">VPS Hosting</h3>
+         <div class="plan-separator"></div>
+        <p class="plan-description">On the other hand we denowith righteous indignation and dislike men who are beguiled and</p>
+        <div class="plan-separator"></div>
+        <div class="plan-price"><sup>$</sup>19.99<span>/Monthly</span></div>
+         <div class="plan-separator"></div>
+        <a href="#" class="btn-choose-plan">Choose Plan</a>
+      </div>
+
+      <!-- Plan Card 6: Cloud Hosting -->
+      <div class="plan-card">
+        <img src="./images/cloud-hosting.png" alt="Cloud Hosting Icon" class="plan-icon">
+        <h3 class="plan-title">Cloud Hosting</h3>
+         <div class="plan-separator"></div>
+        <p class="plan-description">On the other hand we denowith righteous indignation and dislike men who are beguiled and</p>
+        <div class="plan-separator"></div>
+        <div class="plan-price"><sup>$</sup>59.99<span>/Monthly</span></div>
+         <div class="plan-separator"></div>
+        <a href="#" class="btn-choose-plan">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======= HOSTING SERVICES SECTION - END ======= -->
+
+      <!-- ======= LOVE SERVICE SECTION - START ======= -->
+      <section class="love-service-section">
+        <div class="container">
+          <div class="love-service-wrapper">
+            <div class="love-service-image">
+              <img
+                src="images/data-cloud.png"
+                alt="Cloud Database Illustration"
+              />
+            </div>
+            <div class="love-service-content">
+              <h2>WHY YOU LOVE OUR SERVICE!</h2>
+              <h3>SOMETHING KNOW OUR HISTORY.</h3>
+              <div class="divider"></div>
+              <p>
+                But I must explain to you how all this mistaken idea denounc
+                pleasure and praising pain was born and I will give you a
+                complete.
+              </p>
+              <ul class="feature-list">
+                <li><i class="fas fa-archive"></i> Best Services Provider</li>
+                <li>
+                  <i class="fas fa-archive"></i> Advance Features & Technology
+                </li>
+                <li><i class="fas fa-archive"></i> 100% Safe & Security</li>
+                <li>
+                  <i class="fas fa-archive"></i> Low Price Renew Facilities
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= LOVE SERVICE SECTION - END ======= -->
+
+      <!-- ======= CLIENTS SECTION - START ======= -->
+      <section class="clients-section">
+        <div class="container">
+          <div class="clients-logos">
+            <div class="client-logo">
+              <img src="images/mc-queen.png" alt="McQueen Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/the-vintage.png" alt="The Vintage Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/alien-valley.png" alt="Alien Valley Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/jefferson.png" alt="Jefferson Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/the-eagle.png" alt="Eagle Logo" />
+            </div>
+            <div class="client-logo">
+              <img src="images/foodball-club.png" alt="Football Logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= CLIENTS SECTION - END ======= -->
+
+      <!-- ======= FOOTER SECTION - START ======= -->
+      <footer class="site-footer-final">
+        <!-- Footer Main: Widgets -->
+        <div class="footer-main-final">
+          <div class="container">
+            <div class="footer-widgets-final">
+              <!-- Widget: Our Services -->
+              <div class="footer-widget-final">
+                <h3 class="widget-title">Our Services</h3>
+                <ul>
+                  <li><a href="#">Web Hosting</a></li>
+                  <li><a href="#">Shared Hosting</a></li>
+                  <li><a href="#">Reseller Hosting</a></li>
+                  <li><a href="#">Cloud Hosting</a></li>
+                  <li><a href="#">VPS Hosting</a></li>
+                  <li><a href="./Dedicated.html">Dedicated Hosting</a></li>
+                </ul>
+              </div>
+              <!-- Widget: Quick Links -->
+              <div class="footer-widget-final widget-quick-links">
+                <h3 class="widget-title">Quick Links</h3>
+                <div class="links-container">
+                  <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="./WHMCS.html">Search Domain</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="./Support.html">Support Center</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Company History</a></li>
+                    <li><a href="#">Setting Services</a></li>
+                    <li><a href="./FAQ.html">FAQ</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Widget: Contact Us -->
+              <div class="footer-widget-final">
+                <h3 class="widget-title">Contact Us</h3>
+                <ul class="contact-list">
+                  <li><i class="fas fa-headphones-alt"></i> 0123456789</li>
+                  <li><i class="far fa-envelope"></i> support@gmail.com</li>
+                  <li>
+                    <i class="fas fa-home"></i> 123 Main road, C Block, USA
+                  </li>
+                </ul>
+                <div class="footer-social-links">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="Dribbble"
+                    ><i class="fab fa-dribbble"></i
+                  ></a>
+                  <a href="#" aria-label="Google Plus"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" aria-label="Pinterest"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom: About, Socials, Copyright -->
+        <div class="footer-bottom-final container">
+          <div class="container">
+            <div class="footer-copyright-final">
+              <p class="copyright-text">
+                2018 Your Company. All Rights Reserved. Designed By BDevs.
+              </p>
+              <div class="payment-methods">
+                <img src="images/payment-card.png" alt="Visa" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ======= FOOTER SECTION - END ======= -->
+    </main>
+  </body>
+</html>
