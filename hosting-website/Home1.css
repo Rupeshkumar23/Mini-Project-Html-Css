@@ -67,14 +67,13 @@
 
 /* ======= HOSTING SERVICES SECTION ======= */
 
-/* General Section Styling */
 .hosting-services-section {
   padding: 100px 0;
-  background-color: var( --section-bg-light); 
-  font-family: 'Poppins', sans-serif;
+  background-color: var(--section-bg-light);
+  font-family: "Poppins", sans-serif;
 }
 
-/* Section Header (re-usable styles) */
+
 .hosting-services-section .section-header {
   text-align: center;
   margin-bottom: 60px;
@@ -83,7 +82,7 @@
 .hosting-services-section .section-header h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #1a083d; /* Dark purple/blue from image */
+  color: #1a083d; 
   margin-bottom: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -97,15 +96,15 @@
   margin: 0 auto;
 }
 
-/* Grid for the plans */
+
 .hosting-plans-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  align-items: center; 
+  align-items: center;
 }
 
-/* Individual Plan Card Styling */
+
 .plan-card {
   background-color: #ffffff;
   border-radius: 10px;
@@ -113,19 +112,19 @@
   text-align: center;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.04);
   border: 1px solid #eef2f8;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.plan-card:hover{
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.plan-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.plan-card img{
-    width: 100px;
-    height: 100px;
+.plan-card img {
+  width: 100px;
+  height: 100px;
 }
 
 .plan-icon {
   margin-bottom: 25px;
-  height: 65px; 
+  height: 65px;
 }
 
 .plan-title {
@@ -169,29 +168,136 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #1D1465;
+  color: #1d1465;
   background-color: transparent;
-  border: 1px solid #1D1465; 
+  border: 1px solid #1d1465;
   border-radius: 50px; /* Pill shape */
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .btn-choose-plan:hover {
-  background-color: #1D1465;
-  border-color: #1D1465;
+  background-color: #1d1465;
+  border-color: #1d1465;
   color: #ffffff;
 }
+/* ======= LATEST BLOG SECTION ======= */
 
+.latest-blog-section {
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+  background-color: #fff;
+}
 
+.latest-blog-section .section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
 
-/* ======= RESPONSIVE ADJUSTMENTS ======= */
+.latest-blog-section .section-header h2 {
+  color: #2c2c2c;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.latest-blog-section .section-header p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-card-content {
+  padding-top: 25px;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.blog-card-title a {
+  text-decoration: none;
+  color: #2c2c2c;
+  transition: color 0.3s ease;
+}
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: 15px;
+  color: #555;
+
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.blog-card-meta-item {
+  display: flex;
+  align-items: center;
+}
+
+.blog-card-meta-item i {
+  margin-right: 8px;
+  color: #555;
+}
+.client_h2 {
+  padding-top: 50px;
+}
+/* ======= CTA SECTION ======= */
+.cta-section {
+  padding: 80px 0;
+}
+
+.cta-globe {
+  bottom: -160px !important;
+}
+
+.cta-paper-plane {
+  top: -100px !important;
+  right: -300px !important;
+  width: 400px !important;
+}
+
+/* === Responsive Design === */
 
 @media (max-width: 992px) {
   .hosting-plans-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -207,7 +313,22 @@
   .plan-card {
     padding: 40px 25px;
   }
-  .plan-description{
+  .plan-description {
     min-height: auto;
+  }
+  .latest-blog-section {
+    padding: 70px 0;
+  }
+
+  .latest-blog-section .section-header h2 {
+    font-size: 30px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card {
+    height: auto;
   }
 }
