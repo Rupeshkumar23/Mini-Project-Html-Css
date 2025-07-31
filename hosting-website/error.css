@@ -1,5 +1,5 @@
 /* ==================================================
-  404 PAGE STYLES
+          404 PAGE STYLES
 ================================================== */
 .hero-section {
   background: linear-gradient(
@@ -150,7 +150,6 @@
 }
 
 @media (max-width: 768px) {
-  /* When header becomes static, reset the spacing adjustments */
   .page-header-section {
     padding: 100px 0;
     margin-top: 0;
