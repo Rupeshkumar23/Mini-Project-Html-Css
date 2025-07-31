@@ -13,7 +13,7 @@
 }
 
 /* ==================================================
-   PRODUCT DETAILS SECTION 
+         PRODUCT DETAILS SECTION 
    ================================================== */
 .product-details-section {
   padding: 60px 0;
@@ -220,7 +220,7 @@
 }
 
 /* ==================================================
-   05. REVIEWS SECTION (TWO-COLUMN LAYOUT)
+         REVIEWS SECTION (TWO-COLUMN LAYOUT)
    ================================================== */
 .product-reviews-section {
   padding-top: 60px;
@@ -340,7 +340,7 @@
 }
 
 /* ==================================================
-   06. RESPONSIVE DESIGN
+         RESPONSIVE DESIGN
    ================================================== */
 @media (max-width: 768px) {
   .reviews-content-wrapper {

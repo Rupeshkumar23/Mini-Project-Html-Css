@@ -73,7 +73,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 220px;
   font-weight: 400;
-  color: #5d6fbb; /* Light blue-gray from image */
+  color: #5d6fbb; 
   line-height: 1;
 }
 
@@ -82,7 +82,7 @@
   height: auto;
   margin: 0 -15px;
   position: relative;
-  top: -20px; /* Aligns magnifier vertically with the numbers */
+  top: -20px; 
 }
 
 .error-title {

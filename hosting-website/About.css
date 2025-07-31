@@ -1,11 +1,6 @@
-/* ==================================================
-   ABOUT.CSS
-   - Styles specific to the About Us page
-   - Meant to be used alongside the main style.css
-   ================================================== */
 
 /* ==================================================
-   01. ABOUT HERO SECTION
+    ABOUT HERO SECTION
    ================================================== */
 .about-hero-section {
   padding: 180px 0 120px 0;
@@ -48,7 +43,7 @@
 }
 
 /* ==================================================
-   02. WELCOME SECTION (CORRECTED)
+   WELCOME SECTION (CORRECTED)
    ================================================== */
 .welcome-section {
   padding: 100px 0;
@@ -102,7 +97,7 @@
 
 
 /* ==================================================
-   03. VIDEO CTA SECTION
+    VIDEO CTA SECTION
    ================================================== */
 .video-cta-section {
   background: url("images/business-man-group-work-computer.jpg") no-repeat center center/cover;
@@ -155,7 +150,7 @@
 }
 
 /* ==================================================
-   04. WHY CHOOSE US (ABOUT) SECTION
+    WHY CHOOSE US (ABOUT) SECTION
    ================================================== */
 .why-choose-about-section {
   padding: 100px 0;
@@ -184,7 +179,7 @@
 }
 
 /* ==================================================
-   05. TEAM SECTION (MODIFIED)
+    TEAM SECTION (MODIFIED)
    ================================================== */
 .team-section {
   padding: 100px 0;
@@ -257,7 +252,7 @@
 
 
 /* ==================================================
-   06. DOMAIN CTA SECTION
+    DOMAIN CTA SECTION
    ================================================== */
 .domain-cta-section {
   padding: 80px 0;
@@ -323,7 +318,7 @@
 }
 
 /* ==================================================
-   07. TESTIMONIALS SECTION (Adjustments for About Page)
+   TESTIMONIALS SECTION 
    ================================================== */
 .testimonials-section .testimonial-nav.prev {
   left: 10%;
@@ -340,7 +335,7 @@
 }
 
 /* ==================================================
-   08. RESPONSIVE DESIGN
+    RESPONSIVE DESIGN
    ================================================== */
 
 /* Laptops & Medium Devices (max-width: 992px) */
@@ -362,9 +357,9 @@
   }
 
   .welcome-content {
-    flex-direction: column; /* Stacks the two text columns */
+    flex-direction: column; 
     gap: 20px;
-    text-align: center; /* Centers the text inside the columns */
+    text-align: center; 
   }
 
   .features-grid,

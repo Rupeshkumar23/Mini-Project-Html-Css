@@ -1,16 +1,7 @@
-/* ==================================================
-   TABLE OF CONTENTS - Contact.css
-   ==================================================
-   01. SHARED & OVERRIDE STYLES
-   02. CONTACT HERO SECTION
-   03. CONTACT INFO CARDS
-   04. MESSAGE FORM SECTION
-   05. MAP SECTION
-   06. RESPONSIVE DESIGN
-   ================================================== */
+
 
 /* ==================================================
-   01. SHARED & OVERRIDE STYLES
+           SHARED & OVERRIDE STYLES
    ================================================== */
 .hero-section {
   background: linear-gradient(
@@ -27,7 +18,7 @@
 }
 
 /* ==================================================
-   02. CONTACT HERO SECTION
+           CONTACT HERO SECTION
    ================================================== */
 .contact-hero-section {
   padding: 180px 0 250px 0; /* Reduced padding */
@@ -57,7 +48,7 @@
 }
 
 /* ==================================================
-   03. CONTACT INFO CARDS
+               CONTACT INFO CARDS
    ================================================== */
 .contact-cards-section {
  padding: 100px 0;
@@ -130,7 +121,7 @@
 }
 
 /* ==================================================
-   04. MESSAGE FORM SECTION
+             MESSAGE FORM SECTION
    ================================================== */
 .message-form-section {
     padding-bottom: 100px;
@@ -198,7 +189,7 @@
 }
 
 /* ==================================================
-   05. MAP SECTION
+                 MAP SECTION
    ================================================== */
 
 .map-container img {
@@ -208,7 +199,7 @@
 
 
 /* ==================================================
-   06. RESPONSIVE DESIGN
+               RESPONSIVE DESIGN
    ================================================== */
 @media (max-width: 992px) {
     .contact-hero-section {

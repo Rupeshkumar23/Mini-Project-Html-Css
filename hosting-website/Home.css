@@ -231,7 +231,7 @@
 .cta-image img {
   max-width: 100%;
   height: auto;
-  transform: scale(1.1); /* Slightly enlarge image to match design */
+  transform: scale(1.1); 
 }
 
 .cta-content {
@@ -249,7 +249,7 @@
 .cta-content p {
   font-size: 16px;
   margin-bottom: 30px;
-  max-width: 450px; /* Constrain width of paragraph */
+  max-width: 450px; 
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -378,7 +378,7 @@ background-color: var(--section-bg-light);
 
 .newsletter-signup-form button {
   border: none;
-  background-color: #40e0d0; /* Bright Turquoise */
+  background-color: #40e0d0; 
   color: #2c234d;
   padding: 15px 25px;
   font-weight: 700;

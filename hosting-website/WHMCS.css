@@ -58,7 +58,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #3c97c2; /* Teal color from image */
+  background-color: #3c97c2; 
   color: var(--text-light);
 }
 .btn-send-code:hover {
@@ -83,7 +83,7 @@
   text-align: justify;
 }
 
-/* This reuses a button style from style.css */
+
 .whmcs-welcome-wrapper .btn-read-more {
   display: inline-block;
   background-color: var(--theme-purple);
@@ -100,7 +100,7 @@
 }
 
 /* ==================================================
-   06. RESPONSIVE DESIGN
+             RESPONSIVE DESIGN
    ================================================== */
 
 @media (max-width: 768px) {
