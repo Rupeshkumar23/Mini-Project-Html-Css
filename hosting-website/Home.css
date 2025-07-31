@@ -283,8 +283,33 @@ background-color: var(--section-bg-light);
   padding: 60px 50px;
   background: linear-gradient(to  right, var(--hero-bg-start) 55%, var(--hero-bg-end) 100%);
   color: #fff;
+   position: relative; 
+}
+.newsletter-signup-section::before,
+.newsletter-signup-section::after {
+  content: ''; 
+  position: absolute;
+  bottom: -20px; 
+  width: 200px;
+  height: 120px;
+  background-image: url('./images/envelope.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2; 
+  pointer-events: none; 
 }
 
+.newsletter-signup-section::before {
+  left: -40px;
+  transform: rotate(40deg);
+  bottom: -70px;
+}
+
+.newsletter-signup-section::after {
+  right: -100px;
+   transform: rotate(-40deg);
+ 
+}
 .newsletter-signup-wrapper {
   display: flex;
   align-items: center;
@@ -390,7 +415,7 @@ background-color: var(--section-bg-light);
   padding-left: 5px;
 }
 
-/* Quick Links special styling */
+
 .widget-quick-links .links-container {
   display: flex;
   gap: 30px;
@@ -431,6 +456,12 @@ background-color: var(--section-bg-light);
                RESPONSIVE STYLES
 ================================================== */
 
+@media (max-width: 1416px) {
+  .newsletter-signup-section::before,
+.newsletter-signup-section::after{
+  display: none;
+}
+}
 @media (max-width: 992px) {
   .main-nav ul li a {
    color: var(--text-dark);

@@ -1,21 +1,4 @@
 /* ==================================================
-   TABLE OF CONTENTS
-   ==================================================
-   01. ROOT & VARIABLES
-   02. GENERAL & RESET
-   03. REUSABLE COMPONENTS (Buttons, Section Headers)
-   04. HEADER
-   05. HERO SECTION
-   06. DOMAIN SEARCH SECTION
-   07. WHY CHOOSE US SECTION
-   08. PRICING PLAN SECTION
-   09. ABOUT & LOVE SERVICE SECTIONS
-   10. CTA, SERVICES, TESTIMONIALS, CLIENTS
-   11. FOOTER
-   12. RESPONSIVE DESIGN
-   ================================================== */
-
-/* ==================================================
    01. ROOT & VARIABLES
    ================================================== */
 :root {
@@ -1421,10 +1404,7 @@ img {
     padding: 15px;
   }
   .badge {
-    position: static;
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: middle;
+   display: none;
   }
 
   /* Hero */
